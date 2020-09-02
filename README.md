@@ -9,33 +9,33 @@ _This game is for educational purposes as part of my **Interactive Frontend Proj
 
 ## Table of Contents
 
-1. [User Experience](#-ux)
+1. [User Experience](#ux)
 
- -  [User Stories](#-user-stories)
+  -  [User Stories](#user-stories)
 
- -  [Design](#-design)
+  -  [Design](#design)
 
- -  [Features](#-features)
+  -  [Features](#features)
 
- -  [Future Features](#-future-features)
+  -  [Future Features](#future-features)
 
- -  [Wireframes](#-wireframes)
+  -  [Wireframes](#wireframes)
 
- - [Technologies Used](#-technologies-used)
+  - [Technologies Used](#technologies-used)
 
- - [Testing](#-testing)
+  - [Testing](#testing)
 
-2. [Deployment](#-deployment)
+2. [Deployment](#deployment)
 
- - [GitHub](#-github)
+  - [GitHub](#github)
 
- - [For Local Deployment](#-for-local-deployment)
+  - [For Local Deployment](#for-local-deployment)
 
-3. [Acknowledgements](#-acknowledgements)
+3. [Acknowledgements](#acknowledgements)
 
- - [Code](#-code)
+  - [Code](#code)
 
- - [Contents](#-contents)
+  - [Contents](#contents)
 
 # Motivation
 
@@ -49,12 +49,12 @@ to ball control and passing abilities of the player. The term
 Whack-A-Mole is also very topical at the moment as it is the name
 of a strategy to tackle local coronavirus cases in the UK.
 
-## UX
-
 ### Target audience
 
-    The target audience is from 5 years old up to anyone looking
-    to kill a few moments in their otherwise busy day. 
+The target audience is from 5 years old up to anyone looking
+to kill a few moments in their otherwise busy day. 
+
+## UX
 
 ### User Stories
 
