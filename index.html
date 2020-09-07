@@ -11,6 +11,12 @@
       crossorigin="anonymous"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
     <title>Whack A Walrus</title>
@@ -18,17 +24,22 @@
 
   <body>
     <div class="container-lg container-fluid header-container">
-      <h1 class="header text-center">Whack A Walrus</h1>
+      <h1 class="header-main text-center">
+        Wh<span class="blue">a</span>ck <span class="blue">A</span> W<span
+          class="blue"
+          >a</span
+        >lrus
+      </h1>
 
       <div class="row">
-        <div class="col text-center">
-          Time
-          <div class="box"></div>
+        <div class="col info-box time">
+          Time:
+          <div class="box text-center">20</div>
         </div>
-        <div class="col-6 blank">Blank</div>
-        <div class="col text-center">
-          Score
-          <div class="box"></div>
+        <div class="col-6 blank"></div>
+        <div class="col info-box score">
+          Score:
+          <div class="box text-center">0</div>
         </div>
       </div>
     </div>
@@ -39,38 +50,47 @@
       </div>
 
       <div class="row game-row">
-        <div class="col hole hole-1">
+        <div class="hole hole-1">
           <div class="walrus"></div>
         </div>
-        <div class="col hole hole-2">
+        <div class="hole hole-2">
           <div class="walrus"></div>
         </div>
-      </div>
 
-      <div class="row game-row">
-        <div class="col-3 hole hole-3">
-        <div class="walrus"></div>
+        <div class="hole hole-3">
+          <div class="walrus"></div>
         </div>
-        <div class="col-6 hole hole-4">
-        <div class="walrus"></div>
+        <div class="hole hole-4">
+          <div class="walrus"></div>
         </div>
-        <div class="col-3 hole hole-5">
-        <div class="walrus"></div>
+        <div class="hole hole-5">
+          <div class="walrus"></div>
         </div>
-      </div>
 
-      <div class="row game-row">
-        <div class="col hole hole-6">
-        <div class="walrus"></div>
+        <div class="hole hole-6">
+          <div class="walrus"></div>
         </div>
-        <div class="col hole hole-7">
-        <div class="walrus"></div>
+        <div class="hole hole-7">
+          <div class="walrus"></div>
+        </div>
+        <div class="hole hole-8">
+          <div class="walrus"></div>
         </div>
       </div>
     </div>
 
     <footer>
-      Footer
+      <a href="https://www.facebook.com/groups/ThePenguinArmy">
+        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i
+      ></a>
+      <a href="https://twitter.com/WorldPenguinDay">
+        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i
+      ></a>
+      <a
+        href="https://chrome.google.com/webstore/detail/penguin-games/hpfoajbgmofeockljbjaemmofgdmjdmo?hl=en"
+      >
+        <i class="fa fa-gamepad fa-2x" aria-hidden="true"></i
+      ></a>
     </footer>
 
     <script

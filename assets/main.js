@@ -35,9 +35,17 @@ function popUp() {
     // Get random time function in
     const timeUp = randomTime(300, 3000);
     // console.log(holeUp, timeUp);
-    // add .up to walrus class
+    // add .up to hole class
     holeUp.classList.add('up');
     setTimeout(function() {
         holeUp.classList.remove('up');
     }, timeUp);    
+}
+
+// Function to start and stop game
+
+function startGame() {
+    setTimeout(() => {
+        console.log(holes);
+    }, 2000);
 }
