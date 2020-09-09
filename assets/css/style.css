@@ -16,6 +16,7 @@ html {
 body {
   font-size: 16px;
   background: url(../images/snow-rocks.png);
+  overflow: hidden;
 }
 
 .header-container {
@@ -26,6 +27,10 @@ body {
   border-radius: 20px;
   position: relative;
   box-shadow: 2px 2px 2px #c4b3a3;
+}
+
+.btn-container {
+  padding-top: 1.5em;
 }
 
 .header-main {
@@ -39,6 +44,15 @@ body {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+}
+
+.header-info {
+  color: #10100e;
+  padding-top: 1.2em;
+  font-family: "Londrina Solid", cursive;
+  font-size: 4em;
+  letter-spacing: 1.5px;
+  line-height: 1.5px;
 }
 
 .game-container {
@@ -59,6 +73,80 @@ footer {
 footer i {
   color: #03798a;
   margin: 0.5em;
+  transition: 0.3s;
+}
+
+footer i:hover,
+footer i:active {
+    color:  #03798a8c;
+}
+
+
+/* Start and Leaderboard card */
+
+.card-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  width: 75%;
+  height: 70%;
+  background-color: #9eadb5;
+  border-radius: 20px;
+  z-index: 100;
+  opacity: 0.9;
+}
+
+/* Applied when start game is activated */
+
+.card-info.game-on {
+    visibility: hidden;
+    z-index: 0;
+    opacity: 0;
+}
+
+p {
+  position: relative;
+  font-family: "Carter One", cursive;
+  font-size: 1.2em;
+  margin: 0 auto;
+  color: #10100e;
+}
+
+.line-break {
+  display: block;
+}
+
+.btn-game {
+  margin: 1em;
+  color: #10100e;
+  background-color: #03798a;
+  border-color: #03798a;
+  transition: 0.3s;
+}
+
+.btn-game:hover,
+.btn-game:focus {
+  color: #e9e9ec;
+  background-color: #03798a8c;
+  border-color: #03798a8c;
+  box-shadow: none;
+}
+
+.penguin {
+  margin: 1em;
+  padding: 1em;
+}
+
+.penguin-left {
+  top: 10%;
+  left: 33%;
+}
+
+.penguin-right {
+  top: 10%;
+  right: 33%;
+  transform: scaleX(-1);
 }
 
 /* Hole positions */

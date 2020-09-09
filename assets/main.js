@@ -1,6 +1,13 @@
 const walrus = document.querySelectorAll(".walrus");
 const holes = document.querySelectorAll(".hole");
+const score = document.querySelector(".scoreboard");
+const time = document.querySelector(".countdown");
+const card = document.querySelector('.card-info');
+//  console.log(card);
+// console.log(score.textContent);
+// console.log(time);
 let lastHole;
+let timeOut = false;
 // console.log(walrus);
 // console.log(hole);
 
@@ -33,19 +40,36 @@ function popUp() {
     // Random hole
     const holeUp = randomHole(holes);
     // Get random time function in
-    const timeUp = randomTime(300, 3000);
+    const timeUp = randomTime(300, 1500);
     // console.log(holeUp, timeUp);
     // add .up to hole class
     holeUp.classList.add('up');
     setTimeout(function() {
         holeUp.classList.remove('up');
+        if(!timeOut) popUp();
     }, timeUp);    
 }
 
 // Function to start and stop game
 
 function startGame() {
-    setTimeout(() => {
-        console.log(holes);
-    }, 2000);
+    // Hide Welcome card when start game is pressed
+    card.classList.add("game-on");
+    score.textContent = 0;
+    time.textContent = 20;
+    timeOut = false
+    popUp();
+    setTimeout(function() {
+        timeOut = true;
+        // Show Welcome card when game is over
+        card.classList.remove("game-on");
+    }, 20000);
 }
+
+// Register and count the whacks
+
+function whack(e) {
+    console.log(e);
+}
+
+walrus.forEach(item => item.addEventListener('click', whack));
