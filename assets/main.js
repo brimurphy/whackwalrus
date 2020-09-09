@@ -66,6 +66,9 @@ function startGame() {
     }, 20000);
 }
 
+// Leaderboard button
+
+
 // Register and count the whacks
 
 function whack(e) {

@@ -30,7 +30,7 @@ body {
 }
 
 .btn-container {
-  padding-top: 1.5em;
+  /* padding-top: 1em; */
 }
 
 .header-main {
@@ -78,11 +78,10 @@ footer i {
 
 footer i:hover,
 footer i:active {
-    color:  #03798a8c;
+  color: #03798a8c;
 }
 
-
-/* Start and Leaderboard card */
+/* Start and Leaderboard cards */
 
 .card-info {
   position: absolute;
@@ -100,12 +99,41 @@ footer i:active {
 /* Applied when start game is activated */
 
 .card-info.game-on {
-    visibility: hidden;
-    z-index: 0;
-    opacity: 0;
+  visibility: hidden;
+  z-index: 0;
+  opacity: 0;
 }
 
-p {
+.leaderboard {
+  width: 80%;
+  position: relative;
+  font-family: "Amatic SC", cursive;
+  font-size: 1.5em;
+  letter-spacing: 1.5px;
+  margin-top: 3em;
+  margin-left: 7%;
+  color: #10100e;
+}
+
+.leaderboard thead th {
+  border-bottom: 2px solid #10100e;
+}
+
+.leaderboard th,
+.leaderboard td {
+  border-top: 1px solid #10100e;
+  vertical-align: middle;
+}
+
+/* Add when leaderboard is clicked and remove on back button click */
+
+.leaderboard.scoreboard {
+  visibility: visible;
+  z-index: 100;
+  opacity: 0.9;
+}
+
+.story {
   position: relative;
   font-family: "Carter One", cursive;
   font-size: 1.2em;

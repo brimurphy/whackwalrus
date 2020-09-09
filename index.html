@@ -24,24 +24,86 @@
 
   <body>
     <div class="card-info">
+      <h2 class="header-info text-center">LeaderBoard</h2>
+      <table class="table table-striped leaderboard text-center">
+        <thead>
+          <tr>
+            <th scope="col">Ranking</th>
+            <th scope="col">Name</th>
+            <th scope="col">Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><img src="assets/images/gold.png" alt="Gold Medal"></th>
+            <td>Jingle Knightly</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="assets/images/silver.png" alt="Silver Medal"></th>
+            <td>Pingu</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="assets/images/bronze.png" alt="Bronze Medal"></th>
+            <td>Mumble</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Cody Maverick</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Feathers McGraw</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="btn-container text-center">
+        <button class="btn btn-primary btn-lg btn-game" onclick="">
+          Back
+        </button>
+      </div>
+    </div>
+    
+    <div class="card-info game-on">
       <h2 class="header-info text-center">Welcome To Mount Belinda</h2>
-      
-      <p class="text-center">
-      <img class="penguin penguin-left" src="assets/images/penguin-wave.png" alt="Penguin waving">
-      <img class="penguin penguin-right" src="assets/images/penguin-wave.png" alt="Penguin waving">
+
+      <p class="story text-center">
+        <img
+          class="penguin penguin-left"
+          src="assets/images/penguin-wave.png"
+          alt="Penguin waving"
+        />
+        <img
+          class="penguin penguin-right"
+          src="assets/images/penguin-wave.png"
+          alt="Penguin waving"
+        />
         <span class="line-break">You are Jingle Knightley,</span>
-        <span class="line-break">The bravest penguin in the South Sandwich Islands.</span>
-        <span class="line-break">Your colony is under attack from a herd of hungry walruses</span>
+        <span class="line-break"
+          >The bravest penguin in the South Sandwich Islands.</span
+        >
+        <span class="line-break"
+          >Your colony is under attack from a herd of hungry walruses</span
+        >
         <span class="line-break">Attacking from a secret lair</span>
-        <span class="line-break">You are your colonies only line of defence!!</span>
+        <span class="line-break"
+          >You are your colonies only line of defence!!</span
+        >
         <span class="line-break">Good Luck!</span>
       </p>
 
       <div class="btn-container text-center">
-      <button class="btn btn-primary btn-lg btn-game" onclick="startGame()">Start</button>
-      <button class="btn btn-primary btn-lg btn-game">Leaderboard</button>
+        <button class="btn btn-primary btn-lg btn-game" onclick="startGame()">
+          Start
+        </button>
+        <button class="btn btn-primary btn-lg btn-game" onclick="">
+          Leaderboard
+        </button>
       </div>
-
     </div>
 
     <div class="container-lg container-fluid header-container">
