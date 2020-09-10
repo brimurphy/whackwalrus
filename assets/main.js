@@ -1,8 +1,15 @@
 const walrus = document.querySelectorAll(".walrus");
 const holes = document.querySelectorAll(".hole");
+const cardStart = document.querySelector(".card-start");
+const cardLeader = document.querySelector(".card-board");
 const score = document.querySelector(".scoreboard");
-const time = document.querySelector(".countdown");
-const card = document.querySelector('.card-info');
+// let time = document.querySelector(".countdown");
+const timer = document.querySelector("#time-left");
+let timeLeft = 20;
+const btnStart = document.querySelector("#btn-start");
+const btnLeaderboard = document.querySelector("#btn-leaderboard");
+let countdown;
+
 //  console.log(card);
 // console.log(score.textContent);
 // console.log(time);
@@ -37,42 +44,73 @@ function randomTime(min, max) {
 // Get a Walrus to pop up
 
 function popUp() {
-    // Random hole
-    const holeUp = randomHole(holes);
-    // Get random time function in
-    const timeUp = randomTime(300, 1500);
-    // console.log(holeUp, timeUp);
-    // add .up to hole class
-    holeUp.classList.add('up');
-    setTimeout(function() {
-        holeUp.classList.remove('up');
-        if(!timeOut) popUp();
-    }, timeUp);    
+  // Random hole
+  const holeUp = randomHole(holes);
+  // Get random time function in
+  const timeUp = randomTime(300, 1500);
+  // console.log(holeUp, timeUp);
+  // add .up to hole class
+  holeUp.classList.add("up");
+  setTimeout(function () {
+    holeUp.classList.remove("up");
+    if (!timeOut) popUp();
+  }, timeUp);
 }
 
 // Function to start and stop game
 
 function startGame() {
-    // Hide Welcome card when start game is pressed
-    card.classList.add("game-on");
-    score.textContent = 0;
-    time.textContent = 20;
-    timeOut = false
-    popUp();
-    setTimeout(function() {
-        timeOut = true;
-        // Show Welcome card when game is over
-        card.classList.remove("game-on");
-    }, 20000);
+  // Hide Welcome card when start game is pressed
+  cardStart.classList.add("game-on");
+  score.textContent = 0;
+  timer.textContent = 20;
+  timeOut = false;
+  popUp();
+  setTimeout(function () {
+    timeOut = true;
+    // Show Welcome card when game is over
+    cardStart.classList.remove("game-on");
+  }, 20000);
 }
 
 // Leaderboard button
 
+function leaderboard() {
+  cardLeader.classList.add("scoreboard");
+  cardLeader.classList.remove("game-on");
+  cardStart.classList.add("game-on");
+}
+
+// Back button on Leaderboard
+
+function backToStart() {
+  cardLeader.classList.remove("scoreboard");
+  cardLeader.classList.add("game-on");
+  cardStart.classList.remove("game-on");
+}
+
+// Countdown Timer
+
+function countdownTimer() {
+  let timeLeft = 20;
+  countdown = setInterval(() => {
+    //   <=1 to stop time going negative from timeout fix
+    if (timeLeft <= 1) {
+      clearInterval(countdown);
+    }
+    // Subtract 1 to align seconds and timeout
+    timer.textContent = timeLeft - 1;
+    timeLeft -= 1;
+  }, 1000);
+}
 
 // Register and count the whacks
 
 function whack(e) {
-    console.log(e);
+  console.log(e);
 }
 
-walrus.forEach(item => item.addEventListener('click', whack));
+btnStart.addEventListener("click", startGame);
+btnStart.addEventListener("click", countdownTimer);
+btnLeaderboard.addEventListener("click", backToStart);
+walrus.forEach((item) => item.addEventListener("click", whack));

@@ -23,7 +23,7 @@
   </head>
 
   <body>
-    <div class="card-info">
+    <div class="card-info card-board game-on">
       <h2 class="header-info text-center">LeaderBoard</h2>
       <table class="table table-striped leaderboard text-center">
         <thead>
@@ -62,13 +62,13 @@
         </tbody>
       </table>
       <div class="btn-container text-center">
-        <button class="btn btn-primary btn-lg btn-game" onclick="">
+        <button class="btn btn-primary btn-lg btn-game" onclick="backToStart()">
           Back
         </button>
       </div>
     </div>
     
-    <div class="card-info game-on">
+    <div class="card-info card-start">
       <h2 class="header-info text-center">Welcome To Mount Belinda</h2>
 
       <p class="story text-center">
@@ -97,10 +97,10 @@
       </p>
 
       <div class="btn-container text-center">
-        <button class="btn btn-primary btn-lg btn-game" onclick="startGame()">
+        <button id="btn-start" class="btn btn-primary btn-lg btn-game">
           Start
         </button>
-        <button class="btn btn-primary btn-lg btn-game" onclick="">
+        <button id="btn-leaderboard" class="btn btn-primary btn-lg btn-game" onclick="leaderboard()">
           Leaderboard
         </button>
       </div>
@@ -117,7 +117,7 @@
       <div class="row">
         <div class="col info-box time">
           Time:
-          <div class="box text-center countdown">20</div>
+          <div class="box text-center countdown"><span id="time-left">20</span></div>
         </div>
         <div class="col-6 blank"></div>
         <div class="col info-box score">

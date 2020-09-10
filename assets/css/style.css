@@ -127,7 +127,7 @@ footer i:active {
 
 /* Add when leaderboard is clicked and remove on back button click */
 
-.leaderboard.scoreboard {
+.card-board.scoreboard {
   visibility: visible;
   z-index: 100;
   opacity: 0.9;
