@@ -92,7 +92,7 @@ footer i:active {
   height: 70%;
   background-color: #9eadb5;
   border-radius: 20px;
-  z-index: 100;
+  z-index: 999;
   opacity: 0.9;
 }
 
@@ -195,110 +195,147 @@ footer i:active {
   background: url(../images/snow.png) no-repeat center center;
   background-size: contain;
   content: "";
-  width: 100%;
-  height: 70px;
+  width: 115px;
+  height: 45px;
   position: absolute;
-  z-index: 2;
+  z-index: 100;
 }
 
-.hole-1:after,
+/* Position snow pile and walrus above each other */
+
+.hole-1:after {
+  top: 70%;
+  right: 8%;
+}
+
 .hole-1 .walrus {
-  top: 60%;
-  left: 35%;
+  top: 100%;
+  right: 9%;
 }
 
-.hole-2:after,
+.hole-2:after {
+  top: 130%;
+  right: 3%;
+}
+
 .hole-2 .walrus {
-  top: 120%;
-  left: 45%;
+  top: 145%;
+  right: 3.5%;
 }
 
-.hole-3:after,
+.hole-3:after {
+  top: 122%;
+  right: 23%;
+}
+
 .hole-3 .walrus {
-  top: 110%;
-  left: 22%;
+  top: 135%;
+  right: 24%;
 }
 
-.hole-4:after,
+.hole-4:after {
+  top: 211%;
+  right: 11%;
+}
+
 .hole-4 .walrus {
-  top: 200%;
-  left: 35%;
+  top: 225%;
+  right: 12%;
 }
 
-.hole-5:after,
+.hole-5:after {
+  top: 199%;
+  left: 23%;
+}
+
 .hole-5 .walrus {
   top: 220%;
-  left: 20%;
+  left: 24%;
 }
 
-.hole-6:after,
+.hole-6:after {
+  top: 208%;
+  left: 46%;
+}
+
 .hole-6 .walrus {
-  top: 195%;
-  right: 16%;
-}
-
-.hole-7:after,
-.hole-7 .walrus {
   top: 220%;
-  right: 42%;
+  left: 47%;
 }
 
-.hole-8:after,
-.hole-8 .walrus {
-  top: 235%;
+.hole-7:after {
+  top: 233%;
+  right: 33%;
+}
+
+.hole-7 .walrus {
+  top: 250%;
+  right: 34%;
+}
+
+.hole-8:after {
+  top: 232%;
   left: 3%;
+}
+
+.hole-8 .walrus {
+  top: 260%;
+  left: 4%;
 }
 
 /* Walrus */
 
 .walrus {
-  /* display: none; */
   background: url(../images/walrus.png) no-repeat bottom center;
-  width: 100%;
-  height: 100%;
+  width: 100px;
+  height: 70px;
   position: absolute;
   transition: all 20ms;
-  transform: scale(0.9);
+  transform: scale(0.95);
   visibility: hidden;
   opacity: 0;
+  z-index: -1;
 }
 
 /* When class hole has the up class, apply this to walrus */
 
 .hole.up .walrus {
-  /* display: inline-block; */
-  top: 0;
   transform: scale(1);
   visibility: visible;
   opacity: 1;
+  z-index: 100;
 }
 
-.hole-2.up .walrus {
-  top: 60%;
-}
-
-.hole-3.up .walrus {
+.hole-1.up .walrus {
   top: 50%;
 }
 
+.hole-2.up .walrus {
+  top: 110%;
+}
+
+.hole-3.up .walrus {
+  top: 102%;
+}
+
 .hole-4.up .walrus {
-  top: 140%;
+  top: 192%;
 }
 
 .hole-5.up .walrus {
-  top: 160%;
+  top: 178%;
 }
 
 .hole-6.up .walrus {
-  top: 135%;
+  top: 188%;
 }
 
 .hole-7.up .walrus {
-  top: 160%;
+  top: 214%;
 }
 
 .hole-8.up .walrus {
-  top: 175%;
+  top: 211%;
 }
 
 /* Time and Score */

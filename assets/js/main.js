@@ -2,13 +2,15 @@ const walrus = document.querySelectorAll(".walrus");
 const holes = document.querySelectorAll(".hole");
 const cardStart = document.querySelector(".card-start");
 const cardLeader = document.querySelector(".card-board");
-const score = document.querySelector(".scoreboard");
+const scoreboard = document.querySelector(".scoreboard");
 // let time = document.querySelector(".countdown");
 const timer = document.querySelector("#time-left");
-let timeLeft = 20;
 const btnStart = document.querySelector("#btn-start");
 const btnLeaderboard = document.querySelector("#btn-leaderboard");
+const btnBack = document.querySelector("#btn-back");
+let timeLeft = 20;
 let countdown;
+let score = 0;
 
 //  console.log(card);
 // console.log(score.textContent);
@@ -62,7 +64,8 @@ function popUp() {
 function startGame() {
   // Hide Welcome card when start game is pressed
   cardStart.classList.add("game-on");
-  score.textContent = 0;
+  score = 0;
+  scoreboard.textContent = 0;
   timer.textContent = 20;
   timeOut = false;
   popUp();
@@ -104,13 +107,19 @@ function countdownTimer() {
   }, 1000);
 }
 
-// Register and count the whacks
+// Register and count the whacks in the scoreboard
 
 function whack(e) {
-  console.log(e);
+  //  console.log(e);
+  score++;
+  // Bring walrus down once clicked
+  this.parentElement.classList.remove("up");
+  console.dir(this.parentElement);
+  scoreboard.textContent = score;
 }
 
 btnStart.addEventListener("click", startGame);
 btnStart.addEventListener("click", countdownTimer);
-btnLeaderboard.addEventListener("click", backToStart);
+btnLeaderboard.addEventListener("click", leaderboard);
+btnBack.addEventListener("click", backToStart);
 walrus.forEach((item) => item.addEventListener("click", whack));
