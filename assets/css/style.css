@@ -52,7 +52,6 @@ body {
   font-family: "Londrina Solid", cursive;
   font-size: 4em;
   letter-spacing: 1.5px;
-  line-height: 1.5px;
 }
 
 .game-container {
@@ -89,7 +88,7 @@ footer i:active {
   left: 50%;
   transform: translate(-50%, -45%);
   width: 75%;
-  height: 70%;
+  height: fit-content;
   background-color: #9eadb5;
   border-radius: 20px;
   z-index: 999;
@@ -129,7 +128,7 @@ footer i:active {
 
 .card-board.scoreboard {
   visibility: visible;
-  z-index: 100;
+  z-index: 999;
   opacity: 0.9;
 }
 
@@ -234,7 +233,7 @@ footer i:active {
 }
 
 .hole-4:after {
-  top: 211%;
+  top: 228%;
   right: 11%;
 }
 
@@ -254,8 +253,8 @@ footer i:active {
 }
 
 .hole-6:after {
-  top: 208%;
-  left: 46%;
+    top: 220%;
+    left: 43%;
 }
 
 .hole-6 .walrus {
@@ -264,8 +263,8 @@ footer i:active {
 }
 
 .hole-7:after {
-  top: 233%;
-  right: 33%;
+  top: 252%;
+  right: 37%;
 }
 
 .hole-7 .walrus {
@@ -319,7 +318,7 @@ footer i:active {
 }
 
 .hole-4.up .walrus {
-  top: 192%;
+  top: 203%;
 }
 
 .hole-5.up .walrus {
@@ -327,11 +326,13 @@ footer i:active {
 }
 
 .hole-6.up .walrus {
-  top: 188%;
+    top: 193%;
+    left: 44%;
 }
 
 .hole-7.up .walrus {
-  top: 214%;
+    top: 225%;
+    right: 38%;
 }
 
 .hole-8.up .walrus {
@@ -369,4 +370,243 @@ footer i:active {
   font-family: "Londrina Solid", cursive;
   text-shadow: 2px 2px #10100e;
   color: #03798a;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+  .header-container {
+    margin: 1.5em 0;
+  }
+
+  .header-main {
+    font-size: 2.5em;
+    margin-right: 0;
+  }
+
+  .header-info {
+    font-size: 2em;
+    padding-top: 0;
+  }
+
+  .game-container {
+    background: url(../images/iceberg-600.jpg) no-repeat bottom center;
+  }
+
+  footer {
+    margin: 0 auto;
+  }
+
+  .leaderboard {
+    font-size: 1em;
+    width: 100px;
+    letter-spacing: 1px;
+    margin: 1em auto;
+    margin-bottom: 0;
+  }
+
+  .break {
+    display: block;
+  }
+
+  .story {
+    font-size: 1em;
+  }
+
+  .btn-game {
+    margin: 10px;
+    padding: 10px;
+  }
+  .penguin {
+    margin: 0;
+    width: 60%;
+    height: 60%;
+  }
+
+  /* Positions for holes and walruses */
+
+  .hole:after {
+    width: 95px;
+    height: 45px;
+  }
+
+  .hole-1:after {
+    top: -13%;
+    right: 0;
+  }
+
+  .hole-2:after {
+    top: 65%;
+    right: 3%;
+  }
+
+  .hole-3:after {
+    top: 55%;
+    right: 40%;
+  }
+
+  .hole-4:after {
+    top: 190%;
+    right: 4%;
+  }
+
+  .hole-5:after {
+    top: 140%;
+    left: 2%;
+  }
+
+  .hole-6:after {
+    top: 212%;
+}
+
+  .hole-7:after {
+    top: 170%;
+    right: 51%;
+  }
+
+  .walrus {
+    background: url(../images/walrus-small.png) no-repeat bottom center;
+  }
+
+  .hole-1.up .walrus {
+    top: -55%;
+    right: 0%;
+  }
+
+  .hole-2.up .walrus {
+    top: 21%;
+    right: 1%;
+  }
+
+  .hole-3.up .walrus {
+    top: 11%;
+    right: 40%;
+  }
+
+  .hole-4.up .walrus {
+    top: 146%;
+    right: 3%;
+  }
+
+  .hole-5.up .walrus {
+    top: 95%;
+    left: 2%;
+  }
+
+  .hole-6.up .walrus {
+    top: 167%;
+    left: 42%;
+  }
+
+  .hole-7.up .walrus {
+    top: 128%;
+    right: 48%;
+  }
+
+  .hole-8.up .walrus {
+    top: 188%;
+  }
+
+  .info-box {
+    font-size: 1.5em;
+  }
+
+  .box {
+    width: 25px;
+    margin-left: 0.5em;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 801px) {
+  .header-main {
+    font-size: 4em;
+  }
+
+  .game-container {
+    height: 70vh;
+    background: url(../images/iceberg.jpg) no-repeat right bottom;
+  }
+
+   .hole-1:after {
+    top: 100%;
+    right: 12%;
+}
+
+  .hole-2:after {
+    top: 145%;
+  }
+
+  .hole-3:after {
+    top: 136%;
+    right: 32%;
+}
+
+ .hole-4:after {
+    top: 200%;
+    right: 9%;
+}
+
+  .hole-5:after {
+    top: 196%;
+    left: 20%;
+}
+
+.hole-6:after {
+    top: 213%;
+    left: 57%;
+}
+
+  .hole-7:after {
+    top: 221%;
+    right: 56%;
+}
+
+.hole-8:after {
+    top: 190%;
+    left: 1%;
+}
+
+  .walrus {
+    background: url(../images/walrus.png) no-repeat bottom center;
+  }
+
+ .hole-1.up .walrus {
+    top: 84%;
+    right: 13%;
+}
+
+  .hole-2.up .walrus {
+    top: 129%;
+    right: 4%;
+}
+
+ .hole-3.up .walrus {
+    top: 120%;
+    right: 33%;
+}
+
+ .hole-4.up .walrus {
+    top: 184%;
+    right: 10%;
+}
+
+ .hole-5.up .walrus {
+    top: 181%;
+    left: 21%;
+}
+
+ .hole-6.up .walrus {
+    top: 198%;
+    left: 58%;
+}
+
+ .hole-7.up .walrus {
+    top: 205%;
+    right: 57%;
+}
+
+ .hole-8.up .walrus {
+    top: 174%;
+    left: 2%;
+} 
 }
