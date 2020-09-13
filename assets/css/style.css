@@ -253,8 +253,8 @@ footer i:active {
 }
 
 .hole-6:after {
-    top: 220%;
-    left: 43%;
+  top: 220%;
+  left: 43%;
 }
 
 .hole-6 .walrus {
@@ -326,13 +326,13 @@ footer i:active {
 }
 
 .hole-6.up .walrus {
-    top: 193%;
-    left: 44%;
+  top: 193%;
+  left: 44%;
 }
 
 .hole-7.up .walrus {
-    top: 225%;
-    right: 38%;
+  top: 225%;
+  right: 38%;
 }
 
 .hole-8.up .walrus {
@@ -374,7 +374,111 @@ footer i:active {
 
 /* Media Queries */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
+  .header-main {
+    font-size: 5em;
+  }
+
+  .game-container {
+    height: 70vh;
+    background: url(../images/house-lg.jpg) no-repeat center center;
+  }
+
+  .hole-1:after {
+    right: 30%;
+  }
+
+  .hole-2:after {
+    top: 145%;
+  }
+
+  .hole-3:after {
+    top: 139%;
+    right: 38%;
+  }
+
+  .hole-4:after {
+    top: 200%;
+    right: 9%;
+  }
+
+  .hole-5:after {
+    top: 150%;
+    left: 17%;
+  }
+
+  .hole-6:after {
+    top: 237%;
+    left: 12%;
+  }
+
+  .hole-7:after {
+    top: 221%;
+    right: 33%;
+  }
+
+  .hole-8:after {
+    top: 93%;
+    left: 12%;
+  }
+
+  .hole-1.up .walrus {
+    top: 54%;
+    right: 31%;
+  }
+
+  .hole-2.up .walrus {
+    top: 129%;
+    right: 4%;
+  }
+
+  .hole-3.up .walrus {
+    top: 123%;
+    right: 39%;
+  }
+
+  .hole-4.up .walrus {
+    top: 184%;
+    right: 10%;
+  }
+
+  .hole-5.up .walrus {
+    top: 135%;
+    left: 18%;
+  }
+
+  .hole-6.up .walrus {
+    top: 221%;
+    left: 13%;
+  }
+
+  .hole-7.up .walrus {
+    top: 205%;
+    right: 34%;
+  }
+
+  .hole-8.up .walrus {
+    top: 78%;
+    left: 13%;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .header-main {
+    font-size: 4em;
+  }
+
+  .game-container {
+    height: 70vh;
+    background: url(../images/house.jpg) no-repeat bottom center;
+  }
+
+  .walrus {
+    background: url(../images/walrus.png) no-repeat bottom center;
+  }
+}
+
+@media only screen and (max-width: 541px) {
   .header-container {
     margin: 1.5em 0;
   }
@@ -390,7 +494,7 @@ footer i:active {
   }
 
   .game-container {
-    background: url(../images/iceberg-600.jpg) no-repeat bottom center;
+    background: url(../images/house.jpg) no-repeat center center;
   }
 
   footer {
@@ -429,39 +533,43 @@ footer i:active {
     width: 95px;
     height: 45px;
   }
-
   .hole-1:after {
-    top: -13%;
+    top: 50%;
     right: 0;
   }
 
   .hole-2:after {
-    top: 65%;
-    right: 3%;
+    top: 123%;
+    right: 16%;
   }
 
   .hole-3:after {
-    top: 55%;
-    right: 40%;
+    top: 60%;
+    right: 34%;
   }
 
   .hole-4:after {
-    top: 190%;
+    top: 235%;
     right: 4%;
   }
 
   .hole-5:after {
-    top: 140%;
-    left: 2%;
+    top: 50%;
+    left: 0%;
   }
 
   .hole-6:after {
     top: 212%;
-}
+    left: 35%;
+  }
 
   .hole-7:after {
-    top: 170%;
-    right: 51%;
+    top: 185%;
+    right: 66%;
+  }
+
+  .hole-8:after {
+    top: 116%;
   }
 
   .walrus {
@@ -469,42 +577,43 @@ footer i:active {
   }
 
   .hole-1.up .walrus {
-    top: -55%;
+    top: 15%;
     right: 0%;
   }
 
   .hole-2.up .walrus {
-    top: 21%;
-    right: 1%;
+    top: 88%;
+    right: 16%;
   }
 
   .hole-3.up .walrus {
-    top: 11%;
-    right: 40%;
+    top: 25%;
+    right: 34%;
   }
 
   .hole-4.up .walrus {
-    top: 146%;
-    right: 3%;
+    top: 200%;
+    right: 4%;
   }
 
   .hole-5.up .walrus {
-    top: 95%;
-    left: 2%;
+    top: 15%;
+    left: 0%;
   }
 
   .hole-6.up .walrus {
-    top: 167%;
-    left: 42%;
+    top: 178%;
+    left: 34%;
   }
 
   .hole-7.up .walrus {
-    top: 128%;
-    right: 48%;
+    top: 149%;
+    right: 66%;
   }
 
   .hole-8.up .walrus {
-    top: 188%;
+    top: 79%;
+    left: 11%;
   }
 
   .info-box {
@@ -515,98 +624,4 @@ footer i:active {
     width: 25px;
     margin-left: 0.5em;
   }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 801px) {
-  .header-main {
-    font-size: 4em;
-  }
-
-  .game-container {
-    height: 70vh;
-    background: url(../images/iceberg.jpg) no-repeat right bottom;
-  }
-
-   .hole-1:after {
-    top: 100%;
-    right: 12%;
-}
-
-  .hole-2:after {
-    top: 145%;
-  }
-
-  .hole-3:after {
-    top: 136%;
-    right: 32%;
-}
-
- .hole-4:after {
-    top: 200%;
-    right: 9%;
-}
-
-  .hole-5:after {
-    top: 196%;
-    left: 20%;
-}
-
-.hole-6:after {
-    top: 213%;
-    left: 57%;
-}
-
-  .hole-7:after {
-    top: 221%;
-    right: 56%;
-}
-
-.hole-8:after {
-    top: 190%;
-    left: 1%;
-}
-
-  .walrus {
-    background: url(../images/walrus.png) no-repeat bottom center;
-  }
-
- .hole-1.up .walrus {
-    top: 84%;
-    right: 13%;
-}
-
-  .hole-2.up .walrus {
-    top: 129%;
-    right: 4%;
-}
-
- .hole-3.up .walrus {
-    top: 120%;
-    right: 33%;
-}
-
- .hole-4.up .walrus {
-    top: 184%;
-    right: 10%;
-}
-
- .hole-5.up .walrus {
-    top: 181%;
-    left: 21%;
-}
-
- .hole-6.up .walrus {
-    top: 198%;
-    left: 58%;
-}
-
- .hole-7.up .walrus {
-    top: 205%;
-    right: 57%;
-}
-
- .hole-8.up .walrus {
-    top: 174%;
-    left: 2%;
-} 
 }

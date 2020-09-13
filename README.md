@@ -1,6 +1,8 @@
+![Whack A Walrus](assets/images/readme-imgs/header.png)
+
 # Whack A Walrus
 
-[View live project here](#)
+[View live project here](https://brimurphy.github.io/whackwalrus/)
 
 Whack a Walrus is based on the old Whack-A-Mole arcade game.
 It's designed to be fun and easy to play for all ages.
@@ -51,7 +53,7 @@ of a strategy to tackle local coronavirus cases in the UK.
 
 ### Target audience
 
-The target audience is from 5 years old up to anyone looking
+The target audience is from 7 years old up to anyone looking
 to kill a few moments in their otherwise busy day. 
 
 ## UX
@@ -71,15 +73,40 @@ to kill a few moments in their otherwise busy day.
 ### Design 
 
 - Colour Scheme
-  - #
+  - ![Color Palette](assets/images/readme-imgs/color-palette.png)
 
+    I have used Color Palette #3652 from [Color Palettes](https://colorpalettes.net)
+    named Colors of Ice. I taught these colours really complimented the colours found
+    in the colder climates of the games characters, the walrus and penguin.
+                                                                                                                                                                                                                                                       
 - Typography
-
-  - #
+  
+  - For the typography I have used [Google Fonts](https://fonts.google.com/).
+    I've used the Londrina Solid and Shadow font for the headers,
+    Amatic SC for the time, score and leaderboard text and
+    Carter One for the story on the start game screen.
+    These three styles really worked with the cartoonish graphics I had 
+    decided to go with for the game.
 
 - Graphics 
 
-  - #
+  - I decided to go with a cartoony look for the game, this was to ensure younger
+    players could enjoy the game as much as older players.
+
+      1. The penguin image is by @win_art on [Free pik](https://www.freepik.com/premium-vector/illustration-cartoon-funny-little-penguin-waving-hand_6410691.htm),
+         I changed the grey to the black colour on the penguin to tie it in better.
+
+      2. The walrus image is by Ahkâm on [Free Icons PNG](https://www.freeiconspng.com/img/48634)
+
+      3. The laptop game image is by brgfx on [Free pik](https://www.freepik.com/free-vector/scene-with-snow-iceberg_6105157.htm)
+
+      4. Tablet and mobile game image by Starder on [Free Design File](https://freedesignfile.com/204641-cartoon-house-with-winter-landscape-vector-03/)
+
+      5. The background image is by OpenClipart-Vectors on [Pixabay](https://pixabay.com/vectors/rock-snow-snow-capped-boulder-576670/)
+
+      6. The medals on the leaderboard are by Anglins on [Clean PNG](https://www.cleanpng.com/png-gold-medal-trophy-award-clip-art-medals-238071/download-png.html)
+
+      7. The 'snow' is an image by Paydaytxtcouk on [FAVPNG](https://favpng.com/png_view/cartoon-cloud-blue-cloud-sky-pattern-png/j5U2THbs)
 
 
 
@@ -87,19 +114,38 @@ to kill a few moments in their otherwise busy day.
 
 - This game is designed to be played on Desktop, Tablet and Mobile devices
 
+When the game is loaded you are greeted by the welcome screen, which gives you two
+options 1. To start the game and 2. to view the leaderboard of high scores
+
+![Welcome Screen](assets/images/readme-imgs/start-screen.png)
+
+The leaderboard screen holds the names and scores of the 5 highest ranking players
+and a back button to return to the previous page.
+
+![Leaderboard](assets/images/readme-imgs/leaderboard-screen.png)
+
+When the game is started the 20 second countdown begins and walruuses will pop up
+at different snow clouds, if you can hit(click on) a walrus 1 point will be added to 
+your score. The game ends after 20 seconds and you are returned to the Welcome screen.
+
+![Game Screen](assets/images/readme-imgs/game-screen.png)
+
 ### Future Features
 
 -  Different playing backgrounds
 
 -  Animations on reaching highscore
 
--  Add objects to avoid whacking to increas difficulty
+-  Add objects to avoid whacking to increase difficulty
 
 ### Wireframes
 
 I have used Balsamiq to create my wireframes for this project, 
 they originally started as some very poor free hand drawings.
-You can see the wireframes [here](#wireframelink)
+You can see the wireframes below:
+
+![Wireframes](assets/images/readme-imgs/wireframes-1.png)
+![Wireframes](assets/images/readme-imgs/wireframes-2.png)
 
 ### Technologies Used
 
@@ -115,7 +161,11 @@ You can see the wireframes [here](#wireframelink)
 
 - [Bootstrap](https://getbootstrap.com/)
 
-- 
+- [Google Fonts](https://fonts.google.com/)
+
+- [Font Awesome](https://fontawesome.com/)
+
+- [Remove bg](https://www.remove.bg/)
 
 ### Testing
 
@@ -161,17 +211,17 @@ This project is deployed by GitHub
 
 4. Push files to GitHub.
 
-5. Click repository [Whack A Walrus](#)
+5. Click repository [Whack A Walrus](https://github.com/brimurphy/whackwalrus)
 
 6. Go to repository settings.
 
 7. Scroll down to GitHub Pages.
 
-8. Click [Whack A Walrus](#) link to acces the site.
+8. Click [Whack A Walrus](https://brimurphy.github.io/whackwalrus/) link to acces the site.
 
 ### For Local Deployment
 
-1. Log in to GitHub and go to the [Whack A Walrus](#) repository.
+1. Log in to GitHub and go to the [Whack A Walrus](https://github.com/brimurphy/whackwalrus) repository.
 
 2. Click the green dropdown labelled "Code".
 
@@ -198,13 +248,37 @@ For more details and downloaing instructions please click [Here](https://docs.gi
 
 ## Acknowledgements
 
-- #
+This project wouldn't of been possible without the help and support of so many people
 
-### Code
- 
- - #
+- [Wes Bos](https://wesbos.com/courses) for his [JavaScript 30](https://javascript30.com/) course, without this I don't know what I would have done.
+  I have used parts of his code mainly in the popUp() function and some CSS code from his Whack A Mole tutorial and can safely say he has helped me understand 
+  JavaScript a little better. 
+
+- Free Code Camps JS tutorials especially [John Smilga](https://www.freecodecamp.org/news/hone-your-javascript-skills-by-building-these-15-projects/)
+  15 JavaScript Projects Full Course
+
+- [W3 Resurce](https://www.w3resource.com/) for help getting the random hole function working.
+
+- [MDN web docs](https://developer.mozilla.org/en-US/) for helping with the random time function.
+
+- [W3C](https://www.w3.org/) for the information to help with some positioning issues.
+
+- [CSS Tricks](https://css-tricks.com/) for positioning issues and some other issues.
+
+- [Stack Overflow](https://stackoverflow.com/) for always having an answer for when I got stuck in a rabbit hole.
+
+- Everybody in the Code Institute [Slack](https://app.slack.com/client/T0L30B202) page for your help and humour, I hope to be
+  more active in the near future.
+
+- [Code Institue](https://codeinstitute.net/) for the opportunity to change my career
+
+- Jonathan Munz for his expertise, knowledge, guidance and patience as I worked through this project.
+
+- My Partner, daughter for allowing me the time to do this course, I know how much you have sacrificed so I can have the time to study
+
+- Family members and friends who have tested the game out for me and given me valuable feedback
 
 ### Content
 
-- # 
+- Written content by Brian Murphy
 
