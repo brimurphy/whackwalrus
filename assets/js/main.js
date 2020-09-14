@@ -6,8 +6,17 @@ const scoreboard = document.querySelector(".scoreboard");
 // let time = document.querySelector(".countdown");
 const timer = document.querySelector("#time-left");
 const btnStart = document.querySelector("#btn-start");
+const btnSave = document.querySelector("#save-score");
+const playerNames = document.querySelectorAll(".player-name");
+const playerScores = document.querySelectorAll(".player-score");
+console.log(playerNames, playerScores);
+const highScoreName = document.querySelector("#highscore-name");
+const btnPlayAgain = document.querySelector("#btn-play-again");
+// console.log([btnPlayAgain, highScoreName]);
 const btnLeaderboard = document.querySelector("#btn-leaderboard");
 const btnBack = document.querySelector("#btn-back");
+// Create an empty array to store the high scores
+const highScores = [];
 let timeLeft = 20;
 let countdown;
 let score = 0;
@@ -71,6 +80,8 @@ function startGame() {
   popUp();
   setTimeout(function () {
     timeOut = true;
+    // Add if score is greater than high scores here
+    // else below
     // Show Welcome card when game is over
     cardStart.classList.remove("game-on");
   }, 20000);
@@ -118,8 +129,39 @@ function whack(e) {
   scoreboard.textContent = score;
 }
 
+// Save a High score
+function saveHighScore(e) {
+  console.log("Submit score", e);
+
+  // Add current leaderboard
+
+  // Save the current score into an array
+  const currentScore = {
+    name: highScoreName.value,
+    score: scoreboard.textContent
+  };
+  // push current score into high score array
+  highScores.push(currentScore);
+
+  // Sort higher scores to the top
+  highScores.sort((a, b) => b.score - a.score)
+  // Iterate through the current leaderboard and replace score with if beaten
+  for(let i=0; i<highScores.length; i++){
+    playerScores[i].textContent = highScores[i].score
+    playerNames[i].textContent = highScores[i].name
+}
+  highScores.splice(5);
+  console.log(highScores);
+}
+
 btnStart.addEventListener("click", startGame);
 btnStart.addEventListener("click", countdownTimer);
+btnSave.addEventListener("click", saveHighScore);
+highScoreName.addEventListener("keyup", () => {
+  console.log(highScoreName.value);
+});
+btnPlayAgain.addEventListener("click", startGame);
+btnPlayAgain.addEventListener("click", countdownTimer);
 btnLeaderboard.addEventListener("click", leaderboard);
 btnBack.addEventListener("click", backToStart);
 walrus.forEach((item) => item.addEventListener("click", whack));

@@ -2,8 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
     <link
       rel="stylesheet"
@@ -24,6 +26,22 @@
   </head>
 
   <body>
+    <div class="card-info highscore text-center card-start game-on">
+      <div><p>Congragulations!! you got a highscore</p></div>
+      <form action="" method="post">
+        <label for="highscore-name">Name:</label>
+        <input type="text" name="name" id="highscore-name" />
+      </form>
+      <div class="btn-container text-center">
+        <button type="submit" id="save-score" class="btn btn-md btn-game">
+          Submit
+        </button>
+        <button id="btn-play-again" class="btn btn-md btn-game">
+          Play Again
+        </button>
+      </div>
+    </div>
+
     <div class="card-info card-board game-on">
       <h2 class="header-info text-center">LeaderBoard</h2>
       <table class="table table-striped leaderboard text-center">
@@ -36,41 +54,51 @@
         </thead>
         <tbody>
           <tr>
-            <th scope="row"><img src="assets/images/gold.png" alt="Gold Medal"></th>
-            <td>Jingle Knightly</td>
-            <td>5</td>
+            <th scope="row">
+              <img src="assets/images/gold.png" alt="Gold Medal" />
+            </th>
+            <td class="player-name">Jingle Knightly</td>
+            <td class="player-score">5</td>
           </tr>
           <tr>
-            <th scope="row"><img src="assets/images/silver.png" alt="Silver Medal"></th>
-            <td>Pingu</td>
-            <td>4</td>
+            <th scope="row">
+              <img src="assets/images/silver.png" alt="Silver Medal" />
+            </th>
+            <td class="player-name">Pingu</td>
+            <td class="player-score">4</td>
           </tr>
           <tr>
-            <th scope="row"><img src="assets/images/bronze.png" alt="Bronze Medal"></th>
-            <td>Mumble</td>
-            <td>3</td>
+            <th scope="row">
+              <img src="assets/images/bronze.png" alt="Bronze Medal" />
+            </th>
+            <td class="player-name">Mumble</td>
+            <td class="player-score">3</td>
           </tr>
           <tr>
             <th scope="row">4</th>
-            <td>Cody Maverick</td>
-            <td>2</td>
+            <td class="player-name">Cody Maverick</td>
+            <td class="player-score">2</td>
           </tr>
           <tr>
             <th scope="row">5</th>
-            <td>Feathers McGraw</td>
-            <td>1</td>
+            <td class="player-name">Feathers McGraw</td>
+            <td class="player-score">1</td>
           </tr>
         </tbody>
       </table>
       <div class="btn-container text-center">
-        <button id="btn-back" class="btn btn-primary btn-md btn-game">
+        <button id="btn-back" class="btn btn-md btn-game">
           Back
         </button>
       </div>
     </div>
-    
+
     <div class="card-info card-start">
-      <h2 class="header-info text-center"><span class="break">Welcome</span> <span class="break">To</span> <span class="break">Mount Belinda</span></h2>
+      <!--remove game on when done-->
+      <h2 class="header-info text-center">
+        <span class="break">Welcome</span> <span class="break">To</span>
+        <span class="break">Mount Belinda</span>
+      </h2>
 
       <p class="story text-center">
         <img
@@ -98,10 +126,10 @@
       </p>
 
       <div class="btn-container text-center">
-        <button id="btn-start" class="btn btn-primary btn-md btn-game">
+        <button id="btn-start" class="btn btn-md btn-game">
           Start
         </button>
-        <button id="btn-leaderboard" class="btn btn-primary btn-md btn-game">
+        <button id="btn-leaderboard" class="btn btn-md btn-game">
           Leaderboard
         </button>
       </div>
@@ -118,7 +146,9 @@
       <div class="row">
         <div class="col info-box time">
           Time:
-          <div class="box text-center countdown"><span id="time-left">20</span></div>
+          <div class="box text-center countdown">
+            <span id="time-left">20</span>
+          </div>
         </div>
         <div class="col-6 blank"></div>
         <div class="col info-box score">

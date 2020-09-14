@@ -29,10 +29,6 @@ body {
   box-shadow: 2px 2px 2px #c4b3a3;
 }
 
-.btn-container {
-  /* padding-top: 1em; */
-}
-
 .header-main {
   color: #10100e;
   position: absolute;
@@ -122,6 +118,13 @@ footer i:active {
 .leaderboard td {
   border-top: 1px solid #10100e;
   vertical-align: middle;
+}
+
+.highscore {
+    width: 50%;
+    font-family: "Amatic SC", cursive;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
 }
 
 /* Add when leaderboard is clicked and remove on back button click */
@@ -318,7 +321,7 @@ footer i:active {
 }
 
 .hole-4.up .walrus {
-  top: 203%;
+  top: 204%;
 }
 
 .hole-5.up .walrus {
@@ -326,12 +329,12 @@ footer i:active {
 }
 
 .hole-6.up .walrus {
-  top: 193%;
+  top: 197%;
   left: 44%;
 }
 
 .hole-7.up .walrus {
-  top: 225%;
+  top: 229%;
   right: 38%;
 }
 
