@@ -130,6 +130,13 @@ your score. The game ends after 20 seconds and you are returned to the Welcome s
 
 ![Game Screen](assets/images/readme-imgs/game-screen.png)
 
+On Mobile and Tablets the game screen will be different, this was to help solve positioning issues on multiple
+screen sizes.
+
+![Mobile screen](assets/images/readme-imgs/start-mobile.png)
+
+![Tablet screen](assets/images/readme-imgs/start-tablet.png)
+
 ### Future Features
 
 -  Different playing backgrounds

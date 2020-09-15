@@ -7,6 +7,11 @@
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
 
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
+    
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -26,11 +31,23 @@
   </head>
 
   <body>
-    <div class="card-info highscore text-center card-start game-on">
-      <div><p>Congragulations!! you got a highscore</p></div>
+    <div class="card-info highscore text-center game-on">
+      <div>
+        <p>
+          Congragulations you defended the colony!!<span class="line-break"
+            >See if you got a highscore</span
+          >
+        </p>
+      </div>
       <form action="" method="post">
-        <label for="highscore-name">Name:</label>
-        <input type="text" name="name" id="highscore-name" />
+        <label for="highscore-name"></label>
+        <input
+          type="text"
+          name="name"
+          id="highscore-name"
+          class="highscore-input"
+          placeholder="Name"
+        />
       </form>
       <div class="btn-container text-center">
         <button type="submit" id="save-score" class="btn btn-md btn-game">
@@ -55,34 +72,34 @@
         <tbody>
           <tr>
             <th scope="row">
-              <img src="assets/images/gold.png" alt="Gold Medal" />
+              <img src="assets/images/gold.png" alt="1" />
             </th>
-            <td class="player-name">Jingle Knightly</td>
-            <td class="player-score">5</td>
+            <td class="player-name"></td>
+            <td class="player-score"></td>
           </tr>
           <tr>
             <th scope="row">
-              <img src="assets/images/silver.png" alt="Silver Medal" />
+              <img src="assets/images/silver.png" alt="2" />
             </th>
-            <td class="player-name">Pingu</td>
-            <td class="player-score">4</td>
+            <td class="player-name"></td>
+            <td class="player-score"></td>
           </tr>
           <tr>
             <th scope="row">
-              <img src="assets/images/bronze.png" alt="Bronze Medal" />
+              <img src="assets/images/bronze.png" alt="3" />
             </th>
-            <td class="player-name">Mumble</td>
-            <td class="player-score">3</td>
+            <td class="player-name"></td>
+            <td class="player-score"></td>
           </tr>
           <tr>
             <th scope="row">4</th>
-            <td class="player-name">Cody Maverick</td>
-            <td class="player-score">2</td>
+            <td class="player-name"></td>
+            <td class="player-score"></td>
           </tr>
           <tr>
             <th scope="row">5</th>
-            <td class="player-name">Feathers McGraw</td>
-            <td class="player-score">1</td>
+            <td class="player-name"></td>
+            <td class="player-score"></td>
           </tr>
         </tbody>
       </table>
@@ -94,7 +111,6 @@
     </div>
 
     <div class="card-info card-start">
-      <!--remove game on when done-->
       <h2 class="header-info text-center">
         <span class="break">Welcome</span> <span class="break">To</span>
         <span class="break">Mount Belinda</span>
@@ -111,9 +127,9 @@
           src="assets/images/penguin-wave.png"
           alt="Penguin waving"
         />
-        <span class="line-break">You are Jingle Knightley,</span>
+        <span class="line-break">You are Jingle Knightley</span>
         <span class="line-break"
-          >The bravest penguin in the South Sandwich Islands.</span
+          >The bravest penguin in the South Sandwich Islands</span
         >
         <span class="line-break"
           >Your colony is under attack from a herd of hungry walruses</span
