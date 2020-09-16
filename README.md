@@ -131,7 +131,7 @@ your score. The game ends after 20 seconds and you are returned to the Welcome s
 ![Game Screen](assets/images/readme-imgs/game-screen.png)
 
 On Mobile and Tablets the game screen will be different, this was to help solve positioning issues on multiple
-screen sizes.
+screen sizes. When a walrus is hit a 'Whack' sound is played to confirm the hit and the score should increase by one. 
 
 ![Mobile screen](assets/images/readme-imgs/start-mobile.png)
 
@@ -176,33 +176,53 @@ You can see the wireframes below:
 
 ### Testing
 
-    Add steps....
+- HTML5 validated with:
+
+  - [W3C HTML Validator](https://validator.w3.org/)
+
+- CSS3 validated with:
+
+  - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+- JavaScript validated with:
+
+  - [JS Hint](https://jshint.com/)
+
+- Tested on following browsers and mobile networks
+
+  * Chrome
+  * Firefox 
+    - Bug: width: fit-content; not valid
+    - Fix: display: table;
+  * Microsoft Edge
+  * Android
+  * Apple
+
+- Random testing used on all above formats
 
 - Testing User Stories
 
   - As a first time user I want to easily understand how to play the game
 
-  Add steps....
+        Simple informative text on buttons for guidance around pop up pages.
 
+        
   - As a user I want simple game play
 
-  Add steps....
+        Click or tap action for 'whacking' with sound to confirm hit .
 
   - As a user I want to view the Highscores
 
-  Add steps....
+        On welcome screen click Leaderboard to view Highscores.
+        After game is over submit score to view Leaderboard.
 
   - As a user I want to have fun
 
-  Add steps....
+        All testers said they enjoyed playing game. The cartoon feel made them want to play again.
 
   - As a user I want smooth game play
 
-  Add steps....
-
-- Bugs
-
-Add bugs....
+        Game starts when start button is pressed no freezing or stalling during game play noticed.
 
 ## Deployment
 
@@ -277,15 +297,19 @@ This project wouldn't of been possible without the help and support of so many p
 - Everybody in the Code Institute [Slack](https://app.slack.com/client/T0L30B202) page for your help and humour, I hope to be
   more active in the near future.
 
-- [Code Institue](https://codeinstitute.net/) for the opportunity to change my career
+- [Code Institue](https://codeinstitute.net/) for the opportunity to change my career.
 
 - Jonathan Munz for his expertise, knowledge, guidance and patience as I worked through this project.
 
-- My Partner, daughter for allowing me the time to do this course, I know how much you have sacrificed so I can have the time to study
+- My Partner, daughter for allowing me the time to do this course, I know how much you have sacrificed so I can have the time to study.
 
-- Family members and friends who have tested the game out for me and given me valuable feedback
+- Family members and friends who have tested the game out for me and given me valuable feedback.
+
+### Audio Content
+
+- The 'Whack' sound on hitting a walrus was supplied by Keith Murphy.
 
 ### Content
 
-- Written content by Brian Murphy
+- Written content by Brian Murphy.
 

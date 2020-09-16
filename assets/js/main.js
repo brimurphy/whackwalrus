@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded", function() {
+    
+// Variables
 const walrus = document.querySelectorAll(".walrus");
 const holes = document.querySelectorAll(".hole");
 const cardStart = document.querySelector(".card-start");
@@ -10,47 +13,30 @@ const playerNames = document.querySelectorAll(".player-name");
 const playerScores = document.querySelectorAll(".player-score");
 const cardHighscore = document.querySelector(".highscore");
 const highScoreName = document.querySelector("#highscore-name");
-const scoreStored = localStorage.getItem("savedScore");
+
+// Get the saved scores or an empty array from local storage
 const btnPlayAgain = document.querySelector("#btn-play-again");
 const btnLeaderboard = document.querySelector("#btn-leaderboard");
 const btnBack = document.querySelector("#btn-back");
-
-// const leaderboardName = document.querySelectorAll(".leaderboard td.player-name");
-// console.log(leaderboardName);
-
-
-
-// highScores.innerText = scoreStored;
-const savedScore = JSON.parse(localStorage.getItem("highScores")) || [];
-console.log(savedScore);
+const hitAudio = document.querySelector(".whack");
 
 
 // Create an empty array to store the high scores
-const highScores = [];
-let timeLeft = 20;
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+
 let countdown;
 let score = 0;
-
-
-//  console.log(card);
-// console.log(score.textContent);
-// console.log(time);
 let lastHole;
 let timeOut = false;
-// console.log(walrus);
-// console.log(hole);
+
 
 // Get random walrus in randow hole for a random time
-
 // Get random hole
 function randomHole(holes) {
   const index = Math.floor(Math.random() * holes.length);
   const hole = holes[index];
-  // console.log(index, hole);
-
   // If it's the same hole run the function again
   if (hole === lastHole) {
-    console.log("wow");
     return randomHole(holes);
   }
   lastHole = hole;
@@ -68,9 +54,10 @@ function randomTime(min, max) {
 function popUp() {
   // Random hole
   const holeUp = randomHole(holes);
+
   // Get random time function in
   const timeUp = randomTime(300, 1500);
-  // console.log(holeUp, timeUp);
+  
   // add .up to hole class
   holeUp.classList.add("up");
   setTimeout(function () {
@@ -92,7 +79,7 @@ function startGame() {
   setTimeout(function () {
     timeOut = true;
     // Add if score is greater than high scores here
-        cardHighscore.classList.remove("game-on");
+    cardHighscore.classList.remove("game-on");
   }, 20000);
 }
 
@@ -141,37 +128,37 @@ function countdownTimer() {
 // Register and count the whacks in the scoreboard
 
 function whack(e) {
-  //  console.log(e);
+ 
   score++;
+  // If hit play sound
+  hitAudio.play();
+
   // Bring walrus down once clicked
   this.parentElement.classList.remove("up");
-  console.dir(this.parentElement);
   scoreboard.textContent = score;
 }
 
 // Save a High score
 // Help from James Q Quick video on Saveing High Scores in Local Storage
 function saveHighScore(e) {
-  console.log("Submit score", e);
-
-  // Add current leaderboard
 
   // Save the current score into an array
   const currentScore = {
     name: highScoreName.value,
-    score: scoreboard.textContent
+    score: scoreboard.textContent,
   };
-  // push current score into high score array
+  // push current score into highscore array
   highScores.push(currentScore);
 
+
   // Sort higher scores to the top
-  highScores.sort((a, b) => b.score - a.score)
+  highScores.sort((a, b) => b.score - a.score);
   // Iterate through the current leaderboard and replace score with if beaten
   // Help from Michael on Tutor support to get figure out
-  for(let i=0; i<highScores.length; i++){
-    playerScores[i].textContent = highScores[i].score
-    playerNames[i].textContent = highScores[i].name
-}
+  for (let i = 0; i < highScores.length; i++) {
+    playerScores[i].textContent = highScores[i].score;
+    playerNames[i].textContent = highScores[i].name;
+  }
   highScores.splice(5);
 
   localStorage.setItem("highScores", JSON.stringify(highScores));
@@ -190,3 +177,5 @@ btnPlayAgain.addEventListener("click", playAgain);
 btnLeaderboard.addEventListener("click", leaderboard);
 btnBack.addEventListener("click", backToStart);
 walrus.forEach((item) => item.addEventListener("click", whack));
+
+});

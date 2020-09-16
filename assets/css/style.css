@@ -58,7 +58,7 @@ body {
 
 footer {
   background-color: #e9e9ec;
-  width: fit-content;
+  display: table;
   max-height: 100px;
   margin: 1em auto;
   font-family: "Amatic SC", cursive;
