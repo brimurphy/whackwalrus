@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 20000);
   }
 
-  // Leaderboard button
+  // When leaderboard button is pressed
 
   function leaderboard() {
     cardLeader.classList.add("scoreboard");
@@ -88,13 +88,15 @@ document.addEventListener("DOMContentLoaded", function () {
     cardStart.classList.add("game-on");
   }
 
-  // Back button on Leaderboard
+  // When back button on Leaderboard is pressed
 
   function backToStart() {
     cardLeader.classList.remove("scoreboard");
     cardLeader.classList.add("game-on");
     cardStart.classList.remove("game-on");
   }
+
+  // When submit button is pressed
 
   function submitScore() {
     cardLeader.classList.add("scoreboard");
@@ -103,6 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
     cardHighscore.classList.add("game-on");
   }
 
+  // When playAgain button is pressed
   function playAgain() {
     cardHighscore.classList.add("game-on");
   }
@@ -142,32 +145,33 @@ document.addEventListener("DOMContentLoaded", function () {
       name: highScoreName.value,
       score: scoreboard.textContent,
     };
-    
+
     // push current score into highscore array
     highScores.push(currentScore);
 
-    // Sort higher scores to the top
+    // Sort higher scores to the top and only accept top 5
     highScores.sort((a, b) => b.score - a.score);
+    highScores.splice(5);
+
     // Iterate through the current leaderboard and replace score with if beaten
     // Help from Michael on Tutor support to get figure out
     for (let i = 0; i < highScores.length; i++) {
       playerScores[i].textContent = highScores[i].score;
       playerNames[i].textContent = highScores[i].name;
     }
-    highScores.splice(5);
 
     localStorage.setItem("highScores", JSON.stringify(highScores));
   }
 
-  // Display msg if leaderboard value is empty
+  // Display msg if player name value is empty
 
-//   function formValue() {
-//     var name = document.forms["leader"]["name"].value;
-//     if (name == "") {
-//         alert("Please enter a name")
-//         return false
-//     }
-//   }
+  //   function formValue() {
+  //     var name = document.forms["leader"]["name"].value;
+  //     if (name == "") {
+  //         alert("Please enter a name")
+  //         return false
+  //     }
+  //   }
 
   btnStart.addEventListener("click", startGame);
   btnStart.addEventListener("click", countdownTimer);
