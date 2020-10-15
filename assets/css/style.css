@@ -121,24 +121,25 @@ footer i:active {
 }
 
 .highscore {
-    width: 50%;
-    font-family: "Amatic SC", cursive;
-    font-size: 2rem;
-    letter-spacing: 1.5px;
+  width: 50%;
+  font-family: "Amatic SC", cursive;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
 }
 
-.highscore input {
-    padding: 2px;
-    background-color: #e9e9ec;
-    border-radius: 5px;
-    opacity: 0.9;
+.highscore-input {
+  width: 90%;
+  padding: 2px;
+  background-color: #e9e9ec;
+  border-radius: 5px;
+  opacity: 0.9;
 }
 
 /* Remove yellow outline on input box */
 .highscore-input:hover,
 .highscore-input:focus,
 .highscore-input:active {
-    outline: 1px solid #9eadb5;
+  outline: 1px solid #9eadb5;
 }
 
 /*-- Autofill box not following style rules, Solution by Fareed Alnamrouti, transition solution by Nathan White on Stack Overflow --*/
@@ -147,6 +148,7 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px #9eadb5 inset !important;
+  box-shadow: 0 0 0 30px #9eadb5 inset !important;
 }
 input:-webkit-autofill {
   -webkit-text-fill-color: #9eadb5 !important;

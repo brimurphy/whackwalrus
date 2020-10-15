@@ -75,7 +75,7 @@ to kill a few moments in their otherwise busy day.
 - Colour Scheme
   - ![Color Palette](assets/images/readme-imgs/color-palette.png)
 
-    I have used Color Palette #3652 from [Color Palettes](https://colorpalettes.net)
+    I have used Color Palette #3652 from [Color Palettes](https://colorpalettes.net/color-palette-3652/)
     named Colors of Ice. I taught these colours really complimented the colours found
     in the colder climates of the games characters, the walrus and penguin.
                                                                                                                                                                                                                                                        
@@ -94,7 +94,7 @@ to kill a few moments in their otherwise busy day.
     players could enjoy the game as much as older players.
 
       1. The penguin image is by @win_art on [Free pik](https://www.freepik.com/premium-vector/illustration-cartoon-funny-little-penguin-waving-hand_6410691.htm),
-         I changed the grey to the black colour on the penguin to tie it in better.
+         I edited the grey to the black colour on the penguin to tie it in better.
 
       2. The walrus image is by Ahkâm on [Free Icons PNG](https://www.freeiconspng.com/img/48634)
 
@@ -151,8 +151,9 @@ I have used Balsamiq to create my wireframes for this project,
 they originally started as some very poor free hand drawings.
 You can see the wireframes below:
 
-![Wireframes](assets/images/readme-imgs/wireframes-1.png)
-![Wireframes](assets/images/readme-imgs/wireframes-2.png)
+![Wireframes](assets/images/readme-imgs/wireframe-1.png)
+
+![Wireframes](assets/images/readme-imgs/wireframe-2.png)
 
 ### Technologies Used
 
