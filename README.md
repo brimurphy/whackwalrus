@@ -202,25 +202,33 @@ You can see the wireframes below:
 
 - Random testing used on all above formats
 
-- Error in console
+#### Bugs/Errors
+
+- Error in console:
   Uncaught TypeError occurs when leaderboard already has 5 names in it
   The 6th score and any scores after would result in an error.
   textContent undefined as there is only 5 elements available for leaderboard.
 
-  Fix
-  Hoisted .splice() method above for loop, under .sort(), 
+  Fix:
+  Hoisted .splice() method above for loop, under .sort(),
   so only 5 scores are ever entered into scoreboard,
   then for loop can sort if score makes it onto leaderboard.
 
-- Overflow
+- Overflow:
   Overflow: hidden on body element causing some screens to hiding game buttons.
   Manually have to zoom out to see buttons
 
-  Fix
+  Fix:
   Remove overflow: hidden from body element to allow screen to scroll.
-  
 
-- Testing User Stories
+- Form value:
+  The form for the leaderboard accepting empty value for leaderboard.
+
+  Fix:
+  JavaScript Form validation used to check if input value is empty.
+  If empty red warning message to be displayed under input box.
+
+* Testing User Stories
 
   - As a first time user I want to easily understand how to play the game
 
@@ -272,20 +280,20 @@ This project is deployed by GitHub
 
 2. If you need to download Git Bash we can download it [here](https://git-scm.com/downloads).
 
-3. Once installed, open your new folder and inside it we can open Git Bash by right clicking 
+3. Once installed, open your new folder and inside it we can open Git Bash by right clicking
    and selecting Git Bash Here. Alternatively pressing the **Shift key** and **F10**
    will bring up the same menu and we can select Git Bash from the menu using the arrow
    keys and **Enter** to select. This will open Git Bash in the directory of our new folder.
 
 4. Log into [GitHub](https://github.com/) and proceed to the [Whack A Walrus](https://github.com/brimurphy/whackwalrus) repository.
 
-5. Above the files there is a *Code* tab. When clicked will open a drop down menu, with
+5. Above the files there is a _Code_ tab. When clicked will open a drop down menu, with
    **Clone**, **Open with GitHub Desktop** and **Download Zip** options. We are going to clone
-   the repository, so under clone we select *HTTPS* if not already selected and copy the URL
+   the repository, so under clone we select _HTTPS_ if not already selected and copy the URL
    by clicking the clipboard symbol beside it.
 
-6. Now in Git Bash we can type *git clone* and paste our copied URL, the insert button on windows
-   will paste into  Git Bash.
+6. Now in Git Bash we can type _git clone_ and paste our copied URL, the insert button on windows
+   will paste into Git Bash.
 
    > \$ git clone https://github.com/brimurphy/whackwalrus.git
 
@@ -301,7 +309,6 @@ This project is deployed by GitHub
 
 8. The repository is now cloned into your new folder.
 
-
 For more details and downloaing instructions please click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop)
 
 ## Acknowledgements
@@ -309,28 +316,31 @@ For more details and downloaing instructions please click [Here](https://docs.gi
 This project wouldn't of been possible without the help and support of so many people
 
 - [Wes Bos](https://wesbos.com/courses) for his [JavaScript 30](https://javascript30.com/) course, without this I don't know what I would have done.
-  I have used parts of his code mainly in the popUp() function and some CSS code from his Whack A Mole tutorial and can safely say he has helped me understand
-  JavaScript a little better.
+  The functionality of the game was based on his[Whack A Mole](https://www.youtube.com/watch?v=toNFfAaWghU) tutorial, I used this as my step by step guide
+  fro building the game. and some CSS code from his Whack A Mole tutorial to position the holes and walruses.
 
 - [Free Code Camps](https://www.freecodecamp.org/learn/) JS tutorials especially [John Smilga](https://www.freecodecamp.org/news/hone-your-javascript-skills-by-building-these-15-projects/)
   15 JavaScript Projects Full Course which I found very usefull at the start of the project to just get an idea of what I could build.
 
-- [W3 Schools](https://www.w3schools.com/js/js_timing.asp), [JavaScript Info](https://javascript.info/settimeout-setinterval), 
+- [W3 Schools](https://www.w3schools.com/js/js_timing.asp), [JavaScript Info](https://javascript.info/settimeout-setinterval),
   [MDN web docs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals)
   for help getting my setTimeout function to work
 
-- [W3 Resurce](https://www.w3resource.com/) 
+- [W3 Resurce](https://www.w3resource.com/)
   for help getting the random hole function working, which created the randomness of where the walruses would pop up next.
 
-- [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) 
+- [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
   for helping with the random time function.
 
-- [W3C](https://www.w3.org/wiki/CSS_absolute_and_fixed_positioning?source=post_page---------------------------) 
+- [W3C](https://www.w3.org/wiki/CSS_absolute_and_fixed_positioning?source=post_page---------------------------)
   for the information on absolute and fixed position which helped position the snow pile and walruses.
 
-- [CSS Tricks](https://css-tricks.com/almanac/properties/p/position/) Chris Coyier, 
+- [CSS Tricks](https://css-tricks.com/almanac/properties/p/position/) Chris Coyier,
   for help with gaining a better understanding of position property.
-  Which helped when positioning the snow piles and walruses. 
+  Which helped when positioning the snow piles and walruses.
+
+- [W3 Schools](https://www.w3schools.com/js/js_validation.asp) and [Web Dev Simplified](https://www.youtube.com/watch?v=In0nB0ABaUk)
+  for help understading JavaScript Form Validation.
 
 - [Stack Overflow](https://stackoverflow.com/) for always having an answer for when I got stuck in a rabbit hole.
 
@@ -347,7 +357,8 @@ This project wouldn't of been possible without the help and support of so many p
 
 ### Audio Content
 
-- The 'Whack' sound on hitting a walrus was supplied by Keith Murphy.
+- The 'Whack' sound on hitting a walrus was supplied by Keith Murphy from a Hanna Barbara Sound Effects cd he had.
+  I used the third sound on track 58 '1 Hit, Cartoon Gravel Hit'. The full sound fx library can be found [here](https://archive.org/details/HB01SFX/58+1+Hit%2C+Cartoon+Gavel+Hit.mp3)
 
 ### Content
 

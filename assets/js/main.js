@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const playerScores = document.querySelectorAll(".player-score");
   const cardHighscore = document.querySelector(".highscore");
   const highScoreName = document.querySelector("#highscore-name");
+  let text = document.getElementById("warning");
 
   // Get the saved scores or an empty array from local storage
   const btnPlayAgain = document.querySelector("#btn-play-again");
@@ -77,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
       timeOut = true;
       // Add if score is greater than high scores here
       cardHighscore.classList.remove("game-on");
-    }, 2000); // 20000 reset after testing
+    }, 20000);
   }
 
   // When leaderboard button is pressed
@@ -91,22 +92,33 @@ document.addEventListener("DOMContentLoaded", function () {
   // When back button on Leaderboard is pressed
 
   function backToStart() {
+    text.innerHTML = "";
     cardLeader.classList.remove("scoreboard");
     cardLeader.classList.add("game-on");
     cardStart.classList.remove("game-on");
   }
 
-  // When submit button is pressed
+  // Submit name to Highscores
+  // Display msg if player name value is empty
 
-//   function submitScore() {
-//     cardLeader.classList.add("scoreboard");
-//     cardLeader.classList.remove("game-on");
-//     cardStart.classList.add("game-on");
-//     cardHighscore.classList.add("game-on");
-//   }
+  function formValue() {
+    let name = document.forms["leader"]["name"].value;
+
+    if (name == "") {
+      text.innerHTML = "Please enter a name";
+      return false;
+    } else {
+      cardLeader.classList.add("scoreboard");
+      cardLeader.classList.remove("game-on");
+      cardStart.classList.add("game-on");
+      cardHighscore.classList.add("game-on");
+      return true;
+    }
+  }
 
   // When playAgain button is pressed
   function playAgain() {
+    text.innerHTML = "";
     cardHighscore.classList.add("game-on");
   }
 
@@ -165,25 +177,9 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("highScores", JSON.stringify(highScores));
   }
 
-  // Display msg if player name value is empty
-
-  function formValue() {
-    var name = document.forms["leader"]["name"].value;
-    if (name == "") {
-      alert("Please enter a name");
-      return false;
-    } else {
-      cardLeader.classList.add("scoreboard");
-      cardLeader.classList.remove("game-on");
-      cardStart.classList.add("game-on");
-      cardHighscore.classList.add("game-on");
-    }
-  }
-
   btnStart.addEventListener("click", startGame);
   btnStart.addEventListener("click", countdownTimer);
   btnSave.addEventListener("click", saveHighScore);
-  //btnSave.addEventListener("click", submitScore);
   btnSave.addEventListener("click", formValue);
   highScoreName.addEventListener("keyup", () => {
     highScoreName.value;

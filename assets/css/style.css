@@ -134,6 +134,10 @@ footer i:active {
   opacity: 0.9;
 }
 
+#warning {
+    color: #d41414;
+}
+
 /* Remove yellow outline on input box */
 .highscore-input:hover,
 .highscore-input:focus,
