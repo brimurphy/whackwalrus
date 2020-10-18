@@ -137,7 +137,8 @@ document.addEventListener("DOMContentLoaded", function () {
     scoreboard.textContent = score;
   }
 
-  // Save a High score
+  // Save a High score and position in leaderboard
+  
   // Help from James Q Quick video on Saving High Scores in Local Storage
   function saveHighScore(e) {
     // Save the current score into an array
@@ -151,10 +152,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Sort higher scores to the top and only accept top 5
     highScores.sort((a, b) => b.score - a.score);
+    // Help from Samantha from Code Institute Tutor support 
     highScores.splice(5);
 
     // Iterate through the current leaderboard and replace score with if beaten
-    // Help from Michael on Tutor support to get figure out
+    // Help from Michael on Code Institute Tutor support 
     for (let i = 0; i < highScores.length; i++) {
       playerScores[i].textContent = highScores[i].score;
       playerNames[i].textContent = highScores[i].name;

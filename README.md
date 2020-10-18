@@ -13,31 +13,31 @@ _This game is for educational purposes as part of my **Interactive Frontend Proj
 
 1. [User Experience](#ux)
 
-  -  [User Stories](#user-stories)
+- [User Stories](#user-stories)
 
-  -  [Design](#design)
+- [Design](#design)
 
-  -  [Features](#features)
+- [Features](#features)
 
-  -  [Future Features](#future-features)
+- [Future Features](#future-features)
 
-  -  [Wireframes](#wireframes)
+- [Wireframes](#wireframes)
 
-  - [Technologies Used](#technologies-used)
+- [Technologies Used](#technologies-used)
 
-  - [Testing](#testing)
+- [Testing](#testing)
 
 2. [Deployment](#deployment)
 
-  - [GitHub](#github)
+- [GitHub](#github)
 
-  - [For Local Deployment](#for-local-deployment)
+- [For Local Deployment](#for-local-deployment)
 
 3. [Acknowledgements](#acknowledgements)
 
-  - [Code](#code)
+- [Code](#code)
 
-  - [Contents](#contents)
+- [Contents](#contents)
 
 # Motivation
 
@@ -54,7 +54,7 @@ of a strategy to tackle local coronavirus cases in the UK.
 ### Target audience
 
 The target audience is from 7 years old up to anyone looking
-to kill a few moments in their otherwise busy day. 
+to kill a few moments in their otherwise busy day.
 
 ## UX
 
@@ -70,45 +70,44 @@ to kill a few moments in their otherwise busy day.
 
 - As a user I want smooth game play.
 
-### Design 
+### Design
 
 - Colour Scheme
+
   - ![Color Palette](assets/images/readme-imgs/color-palette.png)
 
     I have used Color Palette #3652 from [Color Palettes](https://colorpalettes.net/color-palette-3652/)
     named Colors of Ice. I taught these colours really complimented the colours found
     in the colder climates of the games characters, the walrus and penguin.
-                                                                                                                                                                                                                                                       
+
 - Typography
-  
+
   - For the typography I have used [Google Fonts](https://fonts.google.com/).
     I've used the Londrina Solid and Shadow font for the headers,
     Amatic SC for the time, score and leaderboard text and
     Carter One for the story on the start game screen.
-    These three styles really worked with the cartoonish graphics I had 
+    These three styles really worked with the cartoonish graphics I had
     decided to go with for the game.
 
-- Graphics 
+- Graphics
 
   - I decided to go with a cartoony look for the game, this was to ensure younger
     players could enjoy the game as much as older players.
 
-      1. The penguin image is by @win_art on [Free pik](https://www.freepik.com/premium-vector/illustration-cartoon-funny-little-penguin-waving-hand_6410691.htm),
-         I edited the grey to the black colour on the penguin to tie it in better.
+    1. The penguin image is by @win_art on [Free pik](https://www.freepik.com/premium-vector/illustration-cartoon-funny-little-penguin-waving-hand_6410691.htm),
+       I edited the grey to the black colour on the penguin to tie it in better.
 
-      2. The walrus image is by Ahkâm on [Free Icons PNG](https://www.freeiconspng.com/img/48634)
+    2. The walrus image is by Ahkâm on [Free Icons PNG](https://www.freeiconspng.com/img/48634)
 
-      3. The laptop game image is by brgfx on [Free pik](https://www.freepik.com/free-vector/scene-with-snow-iceberg_6105157.htm)
+    3. The laptop game image is by brgfx on [Free pik](https://www.freepik.com/free-vector/scene-with-snow-iceberg_6105157.htm)
 
-      4. Tablet and mobile game image by Starder on [Free Design File](https://freedesignfile.com/204641-cartoon-house-with-winter-landscape-vector-03/)
+    4. Tablet and mobile game image by Starder on [Free Design File](https://freedesignfile.com/204641-cartoon-house-with-winter-landscape-vector-03/)
 
-      5. The background image is by OpenClipart-Vectors on [Pixabay](https://pixabay.com/vectors/rock-snow-snow-capped-boulder-576670/)
+    5. The background image is by OpenClipart-Vectors on [Pixabay](https://pixabay.com/vectors/rock-snow-snow-capped-boulder-576670/)
 
-      6. The medals on the leaderboard are by Anglins on [Clean PNG](https://www.cleanpng.com/png-gold-medal-trophy-award-clip-art-medals-238071/download-png.html)
+    6. The medals on the leaderboard are by Anglins on [Clean PNG](https://www.cleanpng.com/png-gold-medal-trophy-award-clip-art-medals-238071/download-png.html)
 
-      7. The 'snow' is an image by Paydaytxtcouk on [FAVPNG](https://favpng.com/png_view/cartoon-cloud-blue-cloud-sky-pattern-png/j5U2THbs)
-
-
+    7. The 'snow' is an image by Paydaytxtcouk on [FAVPNG](https://favpng.com/png_view/cartoon-cloud-blue-cloud-sky-pattern-png/j5U2THbs)
 
 ### Features
 
@@ -125,13 +124,13 @@ and a back button to return to the previous page.
 ![Leaderboard](assets/images/readme-imgs/leaderboard-screen.png)
 
 When the game is started the 20 second countdown begins and walruuses will pop up
-at different snow clouds, if you can hit(click on) a walrus 1 point will be added to 
+at different snow clouds, if you can hit(click on) a walrus 1 point will be added to
 your score. The game ends after 20 seconds and you are returned to the Welcome screen.
 
 ![Game Screen](assets/images/readme-imgs/game-screen.png)
 
 On Mobile and Tablets the game screen will be different, this was to help solve positioning issues on multiple
-screen sizes. When a walrus is hit a 'Whack' sound is played to confirm the hit and the score should increase by one. 
+screen sizes. When a walrus is hit a 'Whack' sound is played to confirm the hit and the score should increase by one.
 
 ![Mobile screen](assets/images/readme-imgs/start-mobile.png)
 
@@ -139,15 +138,15 @@ screen sizes. When a walrus is hit a 'Whack' sound is played to confirm the hit 
 
 ### Future Features
 
--  Different playing backgrounds
+- Different playing backgrounds
 
--  Animations on reaching highscore
+- Animations on reaching highscore
 
--  Add objects to avoid whacking to increase difficulty
+- Add objects to avoid whacking to increase difficulty
 
 ### Wireframes
 
-I have used Balsamiq to create my wireframes for this project, 
+I have used Balsamiq to create my wireframes for this project,
 they originally started as some very poor free hand drawings.
 You can see the wireframes below:
 
@@ -175,6 +174,8 @@ You can see the wireframes below:
 
 - [Remove bg](https://www.remove.bg/)
 
+- [Favicon](https://favicon.io/)
+
 ### Testing
 
 - HTML5 validated with:
@@ -191,15 +192,26 @@ You can see the wireframes below:
 
 - Tested on following browsers and mobile networks
 
-  * Chrome
-  * Firefox 
+  - Chrome
+  - Firefox
     - Bug: width: fit-content; not valid
     - Fix: display: table;
-  * Microsoft Edge
-  * Android
-  * Apple
+  - Microsoft Edge
+  - Android
+  - Apple
 
 - Random testing used on all above formats
+
+- Error in console
+  Uncaught TypeError occurs when leaderboard already has 5 names in it
+  The 6th score and any scores after would result in an error.
+  textContent undefined as there is only 5 elements available for leaderboard.
+
+  Fix
+  Hoisted .splice() method above for loop, under .sort(), 
+  so only 5 scores are ever entered into scoreboard,
+  then for loop can sort if score makes it onto leaderboard.
+
 
 - Testing User Stories
 
@@ -207,7 +219,6 @@ You can see the wireframes below:
 
         Simple informative text on buttons for guidance around pop up pages.
 
-        
   - As a user I want simple game play
 
         Click or tap action for 'whacking' with sound to confirm hit .
@@ -219,11 +230,12 @@ You can see the wireframes below:
 
   - As a user I want to have fun
 
-        All testers said they enjoyed playing game. The cartoon feel made them want to play again.
+        All testers said they enjoyed playing game. The cartoon feel made them want
+         to attributed to the fun nature of the game.
 
   - As a user I want smooth game play
 
-        Game starts when start button is pressed no freezing or stalling during game play noticed.
+        Game starts when start button is pressed no freezing or stalling during game play.
 
 ## Deployment
 
@@ -249,28 +261,39 @@ This project is deployed by GitHub
 
 ### For Local Deployment
 
-1. Log in to GitHub and go to the [Whack A Walrus](https://github.com/brimurphy/whackwalrus) repository.
+1. Create a new folder to store the cloned files on your device.
 
-2. Click the green dropdown labelled "Code".
+2. If you need to download Git Bash we can download it [here](https://git-scm.com/downloads).
 
-3. Copy the link under 'Clone with HTTPS'
+3. Once installed, open your new folder and inside it we can open Git Bash by right clicking 
+   and selecting Git Bash Here. Alternatively pressing the **Shift key** and **F10**
+   will bring up the same menu and we can select Git Bash from the menu using the arrow
+   keys and **Enter** to select. This will open Git Bash in the directory of our new folder.
 
-4. Open Git Bash.
+4. Log into [GitHub](https://github.com/) and proceed to the [Whack A Walrus](https://github.com/brimurphy/whackwalrus) repository.
 
-5. Change the current working directory to the location where you want the cloned directory.
+5. Above the files there is a *Code* tab. When clicked will open a drop down menu, with
+   **Clone**, **Open with GitHub Desktop** and **Download Zip** options. We are going to clone
+   the repository, so under clone we select *HTTPS* if not already selected and copy the URL
+   by clicking the clipboard symbol beside it.
 
-6. Type git clone, and then paste the URL you copied earlier.
+6. Now in Git Bash we can type *git clone* and paste our copied URL, the insert button on windows
+   will paste into  Git Bash.
 
-  > $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+   > \$ git clone https://github.com/brimurphy/whackwalrus.git
 
 7. Press Enter to create your local clone.
 
-    > $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-    >    Cloning into `Spoon-Knife`...
-    >    remote: Counting objects: 10, done.
-    >    remote: Compressing objects: 100% (8/8), done.
-    >    remove: Total 10 (delta 1), reused 10 (delta 1)
-    >    Unpacking objects: 100% (10/10), done.
+   > Cloning into 'whackwalrus'...
+   > remote: Enumerating objects: 177, done.
+   > remote: Counting objects: 100% (177/177), done.
+   > remote: Compressing objects: 100% (108/108), done.
+   > remote: Total 177 (delta 58), reused 156 (delta 49), pack-reused 0
+   > Receiving objects: 100% (177/177), 7.52 MiB | 5.10 MiB/s, done.
+   > Resolving deltas: 100% (58/58), done.
+
+8. The repository is now cloned into your new folder.
+
 
 For more details and downloaing instructions please click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop)
 
@@ -279,19 +302,28 @@ For more details and downloaing instructions please click [Here](https://docs.gi
 This project wouldn't of been possible without the help and support of so many people
 
 - [Wes Bos](https://wesbos.com/courses) for his [JavaScript 30](https://javascript30.com/) course, without this I don't know what I would have done.
-  I have used parts of his code mainly in the popUp() function and some CSS code from his Whack A Mole tutorial and can safely say he has helped me understand 
-  JavaScript a little better. 
+  I have used parts of his code mainly in the popUp() function and some CSS code from his Whack A Mole tutorial and can safely say he has helped me understand
+  JavaScript a little better.
 
-- Free Code Camps JS tutorials especially [John Smilga](https://www.freecodecamp.org/news/hone-your-javascript-skills-by-building-these-15-projects/)
-  15 JavaScript Projects Full Course
+- [Free Code Camps](https://www.freecodecamp.org/learn/) JS tutorials especially [John Smilga](https://www.freecodecamp.org/news/hone-your-javascript-skills-by-building-these-15-projects/)
+  15 JavaScript Projects Full Course which I found very usefull at the start of the project to just get an idea of what I could build.
 
-- [W3 Resurce](https://www.w3resource.com/) for help getting the random hole function working.
+- [W3 Schools](https://www.w3schools.com/js/js_timing.asp), [JavaScript Info](https://javascript.info/settimeout-setinterval), 
+  [MDN web docs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals)
+  for help getting my setTimeout function to work
 
-- [MDN web docs](https://developer.mozilla.org/en-US/) for helping with the random time function.
+- [W3 Resurce](https://www.w3resource.com/) 
+  for help getting the random hole function working, which created the randomness of where the walruses would pop up next.
 
-- [W3C](https://www.w3.org/) for the information to help with some positioning issues.
+- [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) 
+  for helping with the random time function.
 
-- [CSS Tricks](https://css-tricks.com/) for positioning issues and some other issues.
+- [W3C](https://www.w3.org/wiki/CSS_absolute_and_fixed_positioning?source=post_page---------------------------) 
+  for the information on absolute and fixed position which helped position the snow pile and walruses.
+
+- [CSS Tricks](https://css-tricks.com/almanac/properties/p/position/) Chris Coyier, 
+  for help with gaining a better understanding of position property.
+  Which helped when positioning the snow piles and walruses. 
 
 - [Stack Overflow](https://stackoverflow.com/) for always having an answer for when I got stuck in a rabbit hole.
 
@@ -313,4 +345,3 @@ This project wouldn't of been possible without the help and support of so many p
 ### Content
 
 - Written content by Brian Murphy.
-
