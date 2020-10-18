@@ -317,7 +317,7 @@ This project wouldn't of been possible without the help and support of so many p
 
 - [Wes Bos](https://wesbos.com/courses) for his [JavaScript 30](https://javascript30.com/) course, without this I don't know what I would have done.
   The functionality of the game was based on his[Whack A Mole](https://www.youtube.com/watch?v=toNFfAaWghU) tutorial, I used this as my step by step guide
-  fro building the game. and some CSS code from his Whack A Mole tutorial to position the holes and walruses.
+  fro building the game play, which relies heavily on the code from his tutorial.
 
 - [Free Code Camps](https://www.freecodecamp.org/learn/) JS tutorials especially [John Smilga](https://www.freecodecamp.org/news/hone-your-javascript-skills-by-building-these-15-projects/)
   15 JavaScript Projects Full Course which I found very usefull at the start of the project to just get an idea of what I could build.
