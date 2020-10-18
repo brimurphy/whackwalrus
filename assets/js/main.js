@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
       timeOut = true;
       // Add if score is greater than high scores here
       cardHighscore.classList.remove("game-on");
-    }, 20000);
+    }, 2000); // 20000 reset after testing
   }
 
   // When leaderboard button is pressed
@@ -98,12 +98,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // When submit button is pressed
 
-  function submitScore() {
-    cardLeader.classList.add("scoreboard");
-    cardLeader.classList.remove("game-on");
-    cardStart.classList.add("game-on");
-    cardHighscore.classList.add("game-on");
-  }
+//   function submitScore() {
+//     cardLeader.classList.add("scoreboard");
+//     cardLeader.classList.remove("game-on");
+//     cardStart.classList.add("game-on");
+//     cardHighscore.classList.add("game-on");
+//   }
 
   // When playAgain button is pressed
   function playAgain() {
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Save a High score and position in leaderboard
-  
+
   // Help from James Q Quick video on Saving High Scores in Local Storage
   function saveHighScore(e) {
     // Save the current score into an array
@@ -152,11 +152,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Sort higher scores to the top and only accept top 5
     highScores.sort((a, b) => b.score - a.score);
-    // Help from Samantha from Code Institute Tutor support 
+    // Help from Samantha from Code Institute Tutor support
     highScores.splice(5);
 
     // Iterate through the current leaderboard and replace score with if beaten
-    // Help from Michael on Code Institute Tutor support 
+    // Help from Michael on Code Institute Tutor support
     for (let i = 0; i < highScores.length; i++) {
       playerScores[i].textContent = highScores[i].score;
       playerNames[i].textContent = highScores[i].name;
@@ -167,18 +167,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Display msg if player name value is empty
 
-  //   function formValue() {
-  //     var name = document.forms["leader"]["name"].value;
-  //     if (name == "") {
-  //         alert("Please enter a name")
-  //         return false
-  //     }
-  //   }
+  function formValue() {
+    var name = document.forms["leader"]["name"].value;
+    if (name == "") {
+      alert("Please enter a name");
+      return false;
+    } else {
+      cardLeader.classList.add("scoreboard");
+      cardLeader.classList.remove("game-on");
+      cardStart.classList.add("game-on");
+      cardHighscore.classList.add("game-on");
+    }
+  }
 
   btnStart.addEventListener("click", startGame);
   btnStart.addEventListener("click", countdownTimer);
   btnSave.addEventListener("click", saveHighScore);
-  btnSave.addEventListener("click", submitScore);
+  //btnSave.addEventListener("click", submitScore);
+  btnSave.addEventListener("click", formValue);
   highScoreName.addEventListener("keyup", () => {
     highScoreName.value;
   });

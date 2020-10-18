@@ -212,6 +212,13 @@ You can see the wireframes below:
   so only 5 scores are ever entered into scoreboard,
   then for loop can sort if score makes it onto leaderboard.
 
+- Overflow
+  Overflow: hidden on body element causing some screens to hiding game buttons.
+  Manually have to zoom out to see buttons
+
+  Fix
+  Remove overflow: hidden from body element to allow screen to scroll.
+  
 
 - Testing User Stories
 
