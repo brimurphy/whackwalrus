@@ -1,3 +1,17 @@
+// function randomTime(min, max) {
+//   return Math.round(Math.random() * (max - min) + min);
+// }
+
+// function isValidName(name) {
+//     if (name == "") {
+//       return false;
+//     }
+//     else {
+//         return true;
+//     }
+// }
+
+
 document.addEventListener("DOMContentLoaded", function () {
   // Variables
   const walrus = document.querySelectorAll(".walrus");
@@ -42,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Generate a random time for mole to stay up
+
 
   function randomTime(min, max) {
     return Math.round(Math.random() * (max - min) + min);
@@ -176,11 +191,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   btnStart.addEventListener("click", startGame);
   btnStart.addEventListener("click", countdownTimer);
-  //   btnSave.addEventListener("click", saveHighScore);
   btnSave.addEventListener("click", saveHighScore);
-  highScoreName.addEventListener("keyup", () => {
-    highScoreName.value;
-  });
+//   highScoreName.addEventListener("keyup", () => {
+//     highScoreName.value;
+//   });
   btnPlayAgain.addEventListener("click", startGame);
   btnPlayAgain.addEventListener("click", countdownTimer);
   btnPlayAgain.addEventListener("click", playAgain);

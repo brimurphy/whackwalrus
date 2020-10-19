@@ -138,6 +138,10 @@ screen sizes. When a walrus is hit a 'Whack' sound is played to confirm the hit 
 
 ### Future Features
 
+- Change mobile/tablet background image to be more inline with game story.
+  Currently unable to find image that suits game story and is flexible for holes
+  to make sense in positions on various screen sizes.
+
 - Different playing backgrounds
 
 - Animations on reaching highscore
@@ -161,6 +165,8 @@ You can see the wireframes below:
 - [CSS3](https://en.wikipedia.org/wiki/CSS)
 
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+- [Jasmine Unit Testing](https://cdnjs.com/libraries/jasmine)
 
 - [GitHub](https://github.com/)
 
