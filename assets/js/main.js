@@ -1,17 +1,3 @@
-// function randomTime(min, max) {
-//   return Math.round(Math.random() * (max - min) + min);
-// }
-
-// function isValidName(name) {
-//     if (name == "") {
-//       return false;
-//     }
-//     else {
-//         return true;
-//     }
-// }
-
-
 document.addEventListener("DOMContentLoaded", function () {
   // Variables
   const walrus = document.querySelectorAll(".walrus");
@@ -28,12 +14,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const highScoreName = document.querySelector("#highscore-name");
   let text = document.getElementById("warning");
 
-  // Get the saved scores or an empty array from local storage
   const btnPlayAgain = document.querySelector("#btn-play-again");
   const btnLeaderboard = document.querySelector("#btn-leaderboard");
   const btnBack = document.querySelector("#btn-back");
   const hitAudio = document.querySelector(".whack");
 
+  // Get the saved scores or an empty array from local storage
   // Create an empty array to store the high scores
   const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
@@ -43,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
   let timeOut = false;
 
   // Get random walrus in randow hole for a random time
-  // Get random hole
   function randomHole(holes) {
     const index = Math.floor(Math.random() * holes.length);
     const hole = holes[index];
@@ -56,19 +41,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Generate a random time for mole to stay up
-
-
   function randomTime(min, max) {
     return Math.round(Math.random() * (max - min) + min);
   }
 
-  // Get a Walrus to pop up
-
+  // Get a Walrus to pop up randomly
   function popUp() {
-    // Random hole
     const holeUp = randomHole(holes);
-
-    // Get random time function in
     const timeUp = randomTime(300, 1500);
 
     // add .up to hole class
@@ -80,7 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Function to start and stop game
-
   function startGame() {
     // Hide Welcome card when start game is pressed
     cardStart.classList.add("game-on");
@@ -91,13 +69,11 @@ document.addEventListener("DOMContentLoaded", function () {
     popUp();
     setTimeout(function () {
       timeOut = true;
-      // Add if score is greater than high scores here
       cardHighscore.classList.remove("game-on");
     }, 20000);
   }
 
   // When leaderboard button is pressed
-
   function leaderboard() {
     cardLeader.classList.add("scoreboard");
     cardLeader.classList.remove("game-on");
@@ -105,7 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // When back button on Leaderboard is pressed
-
   function backToStart() {
     text.innerHTML = "";
     cardLeader.classList.remove("scoreboard");
@@ -115,7 +90,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Submit name to Highscores
   // Display msg if player name value is empty
-
   function saveHighScore() {
     let name = document.forms["leader"]["name"].value;
     const currentScore = {
@@ -161,40 +135,30 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Countdown Timer
-
   function countdownTimer() {
     let timeLeft = 20;
     countdown = setInterval(() => {
-      //   <=1 to stop time going negative from timeout fix
       if (timeLeft <= 1) {
         clearInterval(countdown);
       }
-      // Subtract 1 to align seconds and timeout
       timer.textContent = timeLeft - 1;
       timeLeft -= 1;
     }, 1000);
   }
 
   // Register and count the whacks in the scoreboard
-
   function whack(e) {
     score++;
-    // If hit, play sound
     hitAudio.play();
 
     // Bring walrus down once clicked
     this.parentElement.classList.remove("up");
     scoreboard.textContent = score;
   }
-
-  
-
+  // Event Losteners
   btnStart.addEventListener("click", startGame);
   btnStart.addEventListener("click", countdownTimer);
   btnSave.addEventListener("click", saveHighScore);
-//   highScoreName.addEventListener("keyup", () => {
-//     highScoreName.value;
-//   });
   btnPlayAgain.addEventListener("click", startGame);
   btnPlayAgain.addEventListener("click", countdownTimer);
   btnPlayAgain.addEventListener("click", playAgain);

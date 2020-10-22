@@ -148,6 +148,10 @@ screen sizes. When a walrus is hit a 'Whack' sound is played to confirm the hit 
 
 - Add objects to avoid whacking to increase difficulty
 
+- Change mouse pointer to mallet (As suggested by **Claire Roberts** on Code Institue's Slack channel)
+
+- Jasmine Unit Testing
+
 ### Wireframes
 
 I have used Balsamiq to create my wireframes for this project,
@@ -233,6 +237,12 @@ You can see the wireframes below:
   Fix:
   JavaScript Form validation used to check if input value is empty.
   If empty red warning message to be displayed under input box.
+
+- Uncaught TypeError in console in Jasmine testing suite caused by Event Listener.
+  Tests passing otherwise.
+
+  Fix:
+  Review at a later date.
 
 * Testing User Stories
 
@@ -358,6 +368,8 @@ This project wouldn't of been possible without the help and support of so many p
 - Jonathan Munz for his expertise, knowledge, guidance and patience as I worked through this project.
 
 - My Partner, daughter for allowing me the time to do this course, I know how much you have sacrificed so I can have the time to study.
+
+- Shane Murphy for his help with Jasmine Unit Testing. *Section removed*
 
 - Family members and friends who have tested the game out for me and given me valuable feedback.
 
